@@ -6,7 +6,10 @@
  * https://developer.wordpress.org/themes/basics/template-hierarchy/
  * 
  * @package cgr-awpt
- */ 
+ */
+
+//  -- Advanced Custom Field
+$income_feature_image	= "TODO" //get_field('income_feature_image');
 ?>
 
 <?php get_header();?>
@@ -18,6 +21,9 @@
     <section class="header1 top-section-hero-image mbr-fullscreen" id="header1-1">
       <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
 
+      <!-- <img src="<?php echo $income_feature_image['url']; ?>" alt="<?php echo $income_feature_image['alt']; ?>"> -->
+      <img src="./wp-content/theme/pnhuk-theme/assets/src/img/theme/image/mbr.jpg">
+			
       <div class="container">
           <div class="row">
               <div class="col-12 col-lg-6">
