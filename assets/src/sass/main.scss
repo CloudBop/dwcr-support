@@ -1,0 +1,39 @@
+// Essentials.
+// smaccs
+@import "essentials";
+// Generic
+@import "2-generic/generic";
+@import "2-generic/gutenberg";
+
+// Layouts.
+@import "4-layouts/posts/meta";
+@import "4-layouts/posts/pagination";
+@import "4-layouts/header/nav/navigation";
+//
+// Components
+
+$primary_theme: rebeccapurple;
+
+.site-header {
+  background: #fff;
+  height: 60px;
+  color: rebeccapurple;
+  border-bottom: 1px solid rebeccapurple;
+}
+
+.site-footer {
+  background: #fff;
+  height: 60px;
+  color: rebeccapurple;
+  border-top: 1px solid rebeccapurple;
+}
+
+main > .container {
+  height: 100vh
+}
+
+// landing page css
+//
+.top-section-hero-image {
+  background-image: url('../img/theme/images/mbr-1.jpg');
+}
