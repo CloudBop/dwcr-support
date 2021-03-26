@@ -5,7 +5,7 @@
  * @package cgr-awpt
  */
 // Singleton - only instantiated once.
-// - WARNING: has to be namespaced properly
+// - WARNING: has to be namespaced properly  
 $menu_class = \PNHUK_THEME\Inc\Menus::get_instance();
 // get the menu ID
 $header_menu_id = $menu_class->get_menu_id( 'pnhuk-header-menu' );
