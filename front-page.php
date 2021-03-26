@@ -9,8 +9,8 @@ get_header(); ?>
 <div class="container-fluid">
     <?php 
       // 
-        get_template_part('frontpage/frontpage','section1'); 
-        get_template_part('frontpage/frontpage','section2'); 
+        get_template_part('template-parts/frontpage/frontpage','section1'); 
+        get_template_part('template-parts/frontpage/frontpage','section2'); 
       ?>
 	</div>
 <?php get_footer(); ?>
