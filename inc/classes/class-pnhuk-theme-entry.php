@@ -19,9 +19,9 @@ class PNHUK_THEME_ENTRY {
 
     // enque webpack dist
     Assets::get_instance();
+    Menus::get_instance();
     
     // - todo
-    // Menus::get_instance();
     // Meta_Boxes::get_instance();
     // Sidebars::get_instance();
     // Clock_Widget::get_instance();
