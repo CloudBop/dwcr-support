@@ -81,12 +81,14 @@ const plugins = (argv) => [
     {
       // browse to http://localhost:3000/ during development
       host: 'localhost',
-      port: 3000,
+      port: 3333,
       // proxy the Webpack Dev Server endpoint
       // (which should be serving on http://localhost:3100/)
       // through BrowserSync
       // proxy: 'http://localhost:3100/'
-      proxy: 'http://wpgbblockreact.local/'
+      // TODO MOVE TO ENV VARIABLE
+      // proxy: 'http://wpgbblockreact.local/'
+      proxy: 'http://dwcrcharitytheme.local/'
     },
     // plugin options
     {

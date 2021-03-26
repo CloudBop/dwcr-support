@@ -1,6 +1,5 @@
-  <!-- <img src="<?php echo $income_feature_image['url']; ?>" alt="<?php echo $income_feature_image['alt']; ?>"> -->
-
 <!-- TODO ADD PHP VAR FROM ACF -->
+
 <!-- shrink to size if added to section
    style="background-image: url('../wp-content/themes/pnhuk-theme/assets/src/img/theme/image/mbr.jpg');" -->
 <section class="header1 top-section-hero-image mbr-fullscreen" id="header1-1" style="background-image: url('../wp-content/themes/pnhuk-theme/assets/src/img/theme/image/mbr.jpg');">
