@@ -23,7 +23,6 @@
 ?>
 <div id="page" class="site">
   <header id="masthead" class="site-header" role="banner">
-    <h1>Header markup - Nav goes here</h1>
-    <?php // get_template_part( 'template-parts/header/nav' ); ?>
+    <?php get_template_part( 'template-parts/header/nav' ); ?>
   </header>
   <div class="site-content" id="content">
