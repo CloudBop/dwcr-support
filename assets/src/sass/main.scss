@@ -9,24 +9,11 @@
 @import "4-layouts/posts/meta";
 @import "4-layouts/posts/pagination";
 @import "4-layouts/header/nav/navigation";
+@import "4-layouts/footer/footer";
 //
 // Components
 
-$primary_theme: rebeccapurple;
-
-.site-header {
-  background: #fff;
-  height: 60px;
-  color: rebeccapurple;
-  border-bottom: 1px solid rebeccapurple;
-}
-
-.site-footer {
-  background: #fff;
-  height: 60px;
-  color: rebeccapurple;
-  border-top: 1px solid rebeccapurple;
-}
+// $primary_theme: rebeccapurple;
 
 main > .container {
   height: 100vh
