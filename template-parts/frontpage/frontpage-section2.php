@@ -2,24 +2,24 @@
 // DATA FROM ACF
 $section2_image	= get_field('section2_image');
 ?>
-<!-- shrink to size if added to section
-   style="background-image: url('../wp-content/themes/pnhuk-theme/assets/src/img/theme/image/mbr.jpg');" -->
-<section class="header1 top-section-hero-image mbr-fullscreen" id="header1-1" style="background-image: url('../wp-content/themes/pnhuk-theme/assets/src/img/theme/image/mbr.jpg');">
-  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
-
-  <img class="img-fluid" src="<?php echo $section2_image['url']; ?>" alt="<?php echo $section2_image['alt']; ?>">
-  
-  
+<!-- Welcome Section -->
+<section id="welcome-section" class="py-5">
   <div class="container">
-      <div class="row">
-          <div class="col-12 col-lg-6">
-              <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><?php echo get_field('section2_title'); ?></strong></h1>
-              <p class="mbr-text mbr-fonts-style display-7">
-                <?php echo get_field('section2_title'); ?>
-              </p>
-              <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="#"> <?php echo get_field('section2_title'); ?> </a>
-              </div>
-          </div>
+    <div class="row">
+      <div class="col-md-6 align-self-center">
+        <h2><?php the_field('section2_title'); ?></h2>
+        <p class="lead">
+          <?php the_field('section2_blurb'); ?>
+        </p>
+        <a href="" class="btn btn-lg pnh-red-button">
+          <?php the_field('section2_cta'); ?>
+        </a>
       </div>
+      <div class="col-md-6">
+         <?php // WP doesn't allow SVG... hardcoded asset the_field('section2_cta'); ?>
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/src/img/svg/pnh-uk-map.svg" alt="" class="img-fluid mb-3" />
+      </div>
+    </div>
   </div>
 </section>
+<!-- End Welcome Section -->
