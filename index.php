@@ -16,9 +16,7 @@ $income_feature_image	= "TODO" //get_field('income_feature_image');
 
 <div id="primary">
   <main id="main" class="site-main mt-5" role="main">
-
-    <?php get_template_part('frontpage/content','hero'); ?>
-
+    <h1>index</h1>
   </main>
 </div>
 
