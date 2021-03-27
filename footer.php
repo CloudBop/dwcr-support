@@ -8,9 +8,7 @@
 ?>
 
 <footer class="site-footer">
-
   <h3>footer</h3>
-
   <?php
     if (is_active_sidebar('sidebar-2' ) ) {
     ?>
@@ -20,7 +18,6 @@
     <?php
     }
     ?>
-
 </footer>
 
 </div> <!-- end #content.site-content -->
