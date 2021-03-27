@@ -7,9 +7,6 @@
  * 
  * @package cgr-awpt
  */
-
-//  -- Advanced Custom Field
-$income_feature_image	= "TODO" //get_field('income_feature_image');
 ?>
 
 <?php get_header();?>
