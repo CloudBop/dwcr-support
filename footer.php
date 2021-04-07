@@ -7,8 +7,48 @@
  */
 ?>
 
-<footer class="site-footer">
-  
+<!-- Start Footer -->
+<footer class="site-footer pb-5">
+  <div class="container text-center">
+    <div class="row py-5">
+      <div class="col-md-4 footer-margin">
+        <h4 class="mb-2">PNH Support</h4>
+        <a href="#" class="d-block footer-link">Help Center</a>
+        <a href="#" class="d-block footer-link">PNH Forums</a>
+        <a href="#" class="d-block footer-link">PNH Contact</a>
+        <a href="#" class="d-block footer-link">Our site</a>
+      </div>
+
+      <div class="col-md-4 footer-margin">
+        <h4 class="mb-2">Quick Links</h4>
+        <a href="#" class="d-block footer-link">What is PNH?</a>
+        <a href="#" class="d-block footer-link">Signs and Symptoms</a>
+        <a href="#" class="d-block footer-link">Diagnosis</a>
+        <a href="#" class="d-block footer-link">Current Treatments</a>
+      </div>
+
+      <div class="col-md-4 footer-margin">
+        <h4 class="mb-2">Legal</h4>
+        <a href="#" class="d-block footer-link">Disclaimer</a>
+        <a href="#" class="d-block footer-link">Privacy Notice</a>
+        <a href="#" class="d-block footer-link">Constitution</a>
+        <a href="#" class="d-block footer-link">Members T&C</a>
+      </div>
+    </div>
+    <h4>PNH SUPPORT</h4>
+    <p class="m-0">Copyright &copy; <span id="year"></span></p>
+  </div>
+</footer>
+
+</div> <!-- end #content.site-content -->
+</div> <!-- end #page.site -->
+<?php wp_footer(); ?>
+</body>
+</html>
+
+
+<?php /* <footer class="site-footer">
+  footer stuff
   <?php
     if (is_active_sidebar('sidebar-2' ) ) {
     ?>
@@ -19,11 +59,5 @@
     }
     ?>
 
-    <?php// get_template_part( 'template-parts/footer/footer' ); ?>
-</footer>
-
-</div> <!-- end #content.site-content -->
-</div> <!-- end #page.site -->
-<?php wp_footer(); ?>
-</body>
-</html>
+    <?php get_template_part( 'template-parts/footer/footer' ); ?>
+</footer>*/
