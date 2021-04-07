@@ -3,6 +3,20 @@
 // .nav-item:hover .dropdown-menu:not(.show){
 // 	display: block;
 // }
-.site-header {
-  height: 60px;
+// .site-header {
+//   height: 60px;
+// }
+
+/* Nav */
+nav {
+  border-bottom: #ff6161 2px solid;
+}
+
+.pnh-logo {
+  width: 125px;
+}
+
+.nav-link {
+  color: rgb(92, 89, 89);
+  font-size: 18px;
 }

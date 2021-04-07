@@ -1,0 +1,23 @@
+/* Hero Section */
+#hero-section {
+  // background: url(/img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #fff;
+}
+
+#hero-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-inner {
+  height: 100vh;
+}
