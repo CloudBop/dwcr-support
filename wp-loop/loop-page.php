@@ -1,3 +1,5 @@
+<?php // invoked on all Page templates  (page.php) ?>
+
 <?php if(have_posts()) { ?>
   <?php while(have_posts()) { ?>
 
