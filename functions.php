@@ -37,3 +37,26 @@ function pnhuk_get_theme_instance() {
 }
 pnhuk_get_theme_instance();
 // end of initialization
+
+
+function _themename_readmore_link(){
+  echo '<a class="c-post__readmore" href=" '.get_the_permalink().' " title="'. the_title_attribute([ 'echo'=>'false' ]).'">';
+
+  printf(
+    // interpolate string and escape html
+    wp_kses(
+      // %s === get_the_title
+      __ ('Read more <span class="u-screen-reader-text">About %s </span> ', '_themename'),
+      // , with exception to this element
+      [
+        'span' => [
+          // and this attribute
+          'class' => []
+        ]
+      ]
+
+    ),
+    get_the_title()
+  );
+  echo '</a>';
+}
