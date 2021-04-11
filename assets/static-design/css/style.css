@@ -1,0 +1,280 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+/* Basic Styling */
+body {
+  background: #fff;
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 55px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 44px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Buttons */
+.pnh-red-button {
+  background: crimson;
+  color: #fff;
+}
+
+/* Nav */
+nav {
+  border-bottom: #ff6161 2px solid;
+}
+
+.pnh-logo {
+  width: 125px;
+}
+
+.nav-link {
+  color: rgb(92, 89, 89);
+  font-size: 18px;
+}
+
+/* Hero Section */
+#hero-section {
+  background: url(/img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #fff;
+}
+
+#hero-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-inner {
+  height: 100vh;
+}
+
+/* What Is Banner */
+#what-is-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: url(/img/lab.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Card Section */
+.card-row {
+  background: rgb(235, 233, 233);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Event Section */
+.event-wrapper {
+  background: #343a40;
+  color: #fff;
+}
+
+.event-number {
+  font-size: 30px;
+}
+
+.p-none {
+  padding: 0;
+}
+
+/* Contact Section */
+#contact-section {
+  background: #fbefef;
+}
+
+.contact-card {
+  background: #fff;
+}
+
+.card-link {
+  font-size: 24px;
+}
+
+i {
+  font-size: 64px;
+  color: crimson;
+}
+
+/* Zoom Chat Banner */
+#zoom-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: url(/img/zoom-chat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #232323;
+  color: #fff;
+}
+
+.footer-link {
+  color: #bbb;
+  font-size: 20px;
+}
+
+.footer-link:hover {
+  color: #fbefef;
+}
+
+/*--------------------  Breakpoints  --------------------*/
+
+@media (max-width: 768px) {
+  /* Basic Styles */
+  h1 {
+    font-weight: bold;
+    font-size: 56px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 44px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 27px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  /* Welcome Section */
+  .welcome-breakpoint {
+    margin-bottom: 75px;
+  }
+
+  .welcome-image {
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+
+  /* Card Section */
+  .card-order-text {
+    order: 2;
+  }
+
+  .card-order-image {
+    order: 1;
+  }
+
+  .card-image-margin {
+    margin-bottom: 20px;
+  }
+
+  /* Event Section */
+  .event-input {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Basic Styles */
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  /* Nav */
+  .pnh-logo {
+    width: 100px;
+  }
+
+  /* Card Section */
+  #card-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Event Section */
+  #event-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .event-number {
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  /* Contact Section */
+  #contact-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact-margin {
+    margin-bottom: 20px;
+  }
+
+  /* Footer Section */
+  .footer-margin {
+    margin-bottom: 15px;
+  }
+}
