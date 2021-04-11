@@ -88,7 +88,7 @@ function get_the_post_custom_thumbnail( $post_id, $size = 'featured-thumbnail', 
   return $custom_thumbnail;
 }
 
-function the_post_custom_thumbnail($post_id, $size = 'featured-thumbnail', $additional_attributes = []){
+function _themename_the_post_custom_thumbnail($post_id, $size = 'featured-thumbnail', $additional_attributes = []){
   //
   echo get_the_post_custom_thumbnail($post_id, $size, $additional_attributes);
 }

@@ -28,7 +28,7 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <?php if ( ! empty($header_menus) && is_array($header_menus) ) { ?>
 
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto mt-3">
           <?php
             // loop through all items in headermenu array
             foreach ($header_menus as $menu_item) {

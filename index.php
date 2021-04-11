@@ -6,7 +6,7 @@
  * https://developer.wordpress.org/themes/basics/template-hierarchy/
  * https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
  * 
- * @package cgr-awpt
+ * @package pnhuk-dwcr
  */
 ?>
 

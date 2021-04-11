@@ -5,7 +5,9 @@
 
       <?php the_post(); ?>
 
-      <?php get_template_part('template-parts/page/content'); ?>
+      <?php //get_template_part('template-parts/components/page/entry-header'); ?>
+      <?php get_template_part('template-parts/components/page/entry-content'); ?>
+      <?php get_template_part('template-parts/components/page/entry-footer'); ?>
 
       <?php 
       // if (comments_open() || get_comments_number() ) {

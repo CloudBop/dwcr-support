@@ -1,26 +1,18 @@
 <article <?php post_class(); ?>>
 
-    <div style="height:200px">
-        <header class="entry-header">
-            <!-- background image -->
-            <h1 class="" style="z-index:100">
-                <?php the_title() ?>
-            </h1>   
-        </header>
-    </div>
     
     <div class="">
         <div class="entry-image mb3">
            <a href="<?php echo esc_url( get_permalink() ); ?>">
            <?php
-               the_post_custom_thumbnail(
-                   get_the_ID(),
-                   $size = "featured-thumbnail",
-                   [
-                   'sizes' => '(max-width: 350px) 350px, 233px',
-                   'class' => 'attachment-featured-thumbnail size-featured-image'
-                   ]
-               )
+            //    the_post_custom_thumbnail(
+            //        get_the_ID(),
+            //        $size = "featured-thumbnail",
+            //        [
+            //        'sizes' => '(max-width: 350px) 350px, 233px',
+            //        'class' => 'attachment-featured-thumbnail size-featured-image'
+            //        ]
+            //    )
            ?>
            </a>
        </div>
