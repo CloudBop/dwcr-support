@@ -3,3 +3,17 @@
   background: rgb(68, 68, 68);
   color: #fff;
 }
+.event-number {
+  font-size: 30px;
+}
+@include mq($from: xsmall) {
+  .event-input {
+    margin-bottom: 10px;
+  }
+}
+
+@include mq($until: medium) {
+  .event-input {
+    margin-bottom: 10px;
+  }
+}

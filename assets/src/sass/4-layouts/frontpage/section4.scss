@@ -4,3 +4,18 @@
   padding: 20px;
   border-radius: 5px;
 }
+
+@include mq($until: medium) {
+  /* Card Section */
+  .card-order-text {
+    order: 2;
+  }
+
+  .card-order-image {
+    order: 1;
+  }
+
+  .card-image-margin {
+    margin-bottom: 20px;
+  }
+}

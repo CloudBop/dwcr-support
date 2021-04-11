@@ -2,7 +2,7 @@
 <section id="card-section">
   <div class="container">
     <div class="row my-5 card-row">
-      <div class="col-sm-6 align-self-center">
+      <div class="col-sm-6 align-self-center card-order-text">
         <h3>About Us</h3>
         <p>
           PNH Support is a Charitable Incorporated Organisation (CIO)
@@ -11,7 +11,7 @@
         <button class="btn btn-lg pnh-red-button">Read More</button>
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-sm-6 card-order-image card-image-margin">
         <img
           src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/mbr-1-hands.jpeg"
           alt=""
