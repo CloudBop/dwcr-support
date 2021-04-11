@@ -12,13 +12,14 @@
 @import "4-layouts/footer/footer";
 
 @import "4-layouts/frontpage/section1";
-// @import "4-layouts/frontpage/section2";
+@import "4-layouts/frontpage/section2";
 @import "4-layouts/frontpage/section3";
 @import "4-layouts/frontpage/section4";
 @import "4-layouts/frontpage/section5";
 @import "4-layouts/frontpage/section6";
 @import "4-layouts/frontpage/section7";
 @import "4-layouts/frontpage/section8";
+
 
 // $primary_theme: rebeccapurple;
 
@@ -31,3 +32,122 @@ main > .container {
   color: #fff;
 }
 
+
+/*--------------------  Breakpoints  --------------------*/
+
+@media (max-width: 768px) {
+  /* Basic Styles */
+  h1 {
+    font-weight: bold;
+    font-size: 56px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 44px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 27px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  /* Welcome Section */
+  .welcome-breakpoint {
+    margin-bottom: 75px;
+  }
+
+  .welcome-image {
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+
+  /* Card Section */
+  .card-order-text {
+    order: 2;
+  }
+
+  .card-order-image {
+    order: 1;
+  }
+
+  .card-image-margin {
+    margin-bottom: 20px;
+  }
+
+  /* Event Section */
+  .event-input {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Basic Styles */
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  /* Nav */
+  .pnh-logo {
+    width: 100px;
+  }
+
+  /* Card Section */
+  #card-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Event Section */
+  #event-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .event-number {
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  /* Contact Section */
+  #contact-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact-margin {
+    margin-bottom: 20px;
+  }
+
+  /* Footer Section */
+  .footer-margin {
+    margin-bottom: 15px;
+  }
+}

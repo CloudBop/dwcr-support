@@ -6,18 +6,16 @@ $section2_image	= get_field('section2_image');
 <section id="welcome-section" class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 align-self-center">
+      <div class="col-md-6 align-self-center welcome-breakpoint">
         <h2><?php the_field('section2_title'); ?></h2>
-        <p class="lead">
+        <p class="">
           <?php the_field('section2_blurb'); ?>
         </p>
-        <a href="" class="btn btn-lg pnh-red-button">
-          <?php the_field('section2_cta'); ?>
-        </a>
+        <button class="btn btn-lg pnh-red-button">  <?php the_field('section2_cta'); ?></button>
       </div>
       <div class="col-md-6">
          <?php // WP doesn't allow SVG... hardcoded asset the_field('section2_cta'); ?>
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/src/img/svg/pnh-uk-map.svg" alt="" class="img-fluid mb-3" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/src/img/svg/pnh-uk-map.svg" alt="" class="img-fluid mb-3 welcome-image" />
       </div>
     </div>
   </div>

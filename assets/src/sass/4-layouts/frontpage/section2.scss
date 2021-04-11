@@ -1,1 +1,18 @@
 // Rare Together
+@include mq($from: xsmall) {
+  /* Welcome Section */
+  // #welcome-section {
+  //   color: red;
+  // }
+  .welcome-breakpoint {
+    margin-bottom: 75px;
+  }
+
+  .welcome-image {
+    // 
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+}
