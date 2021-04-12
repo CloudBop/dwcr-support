@@ -14,7 +14,7 @@
   "author": "CloudBop",
   "license": "ISC",
   "private": true,
-  "browserlist": [
+  "browserslist": [
     "defaults"
   ],
   "devDependencies": {

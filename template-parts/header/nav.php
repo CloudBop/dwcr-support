@@ -8,7 +8,7 @@
 // - WARNING: has to be namespaced properly  
 $menu_class = \PNHUK_THEME\Inc\Menus::get_instance();
 // get the menu ID
-$header_menu_id = $menu_class->get_menu_id( 'pnhuk-header-menu' );
+$header_menu_id = $menu_class->get_menu_id( 'pnhuk-theme-header-menu' );
 // get the header menu as [] each item is object(WP_Post)
 $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
 ?>
