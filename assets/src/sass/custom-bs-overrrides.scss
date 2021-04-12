@@ -1,0 +1,20 @@
+// override any bootstrap variables above the bootstrap imports.
+// EG
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: snow;
+$border-radius: .4rem;
+$success: #7952b3;
+
+// double check these are working
+$link-hover-color:                        lighten(#140202, 23%);
+$link-hover-decoration:                   overline;
+
+
+// will remove un-named colors if not included eg, danger
+
+// $theme-colors:(
+//     // default link color
+//     "primary": #a39cdf
+// );
