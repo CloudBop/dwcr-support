@@ -88,7 +88,7 @@ const plugins = (argv) => [
       // proxy: 'http://localhost:3100/'
       // TODO MOVE TO ENV VARIABLE
       // proxy: 'http://wpgbblockreact.local/'
-      proxy: 'http://dwcrcharitytheme.local/',
+      proxy: 'http://dwcrcharity.local/',
       // proxy: 'http://dwcrcharitytheme.local/wp-admin/'
     },
     // plugin options
