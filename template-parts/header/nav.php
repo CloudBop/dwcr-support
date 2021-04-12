@@ -70,11 +70,15 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
         </ul>
 
       <?php } // endif ?>
-    
+      
+      <?php /*
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
+      */ ?>
+
+      <a class="btn btn-outline-danger my-2 my-sm-0" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
     </div>
   </div>
 </nav>
