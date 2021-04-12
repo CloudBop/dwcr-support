@@ -19,11 +19,13 @@ class PNHUK_THEME_ENTRY {
 
     // enque webpack dist
     Assets::get_instance();
+
+    // configure WP
     Menus::get_instance();
+    Sidebars::get_instance();
     
     // - todo
     // Meta_Boxes::get_instance();
-    // Sidebars::get_instance();
     // Clock_Widget::get_instance();
     // Block_Patterns::get_instance();
 
