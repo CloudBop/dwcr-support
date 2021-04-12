@@ -33,14 +33,15 @@ class Assets {
     // - use filemtime for timestamp, only changes if file is modified - gets around browser cacheing
     // - register with WP - new WordPress 5.5 feature :- can enqueue programatically, for page_template() || gutenberg || plugin 
     // register styles
-    wp_register_style($handle = 'bootstrap-css', PNHUK_DIR_URI.'/assets/src/library/css/bootstrap.min.css' , [], false, $media= 'all');
-    wp_register_style($handle = 'main-css', PNHUK_BUILD_CSS_URI . '/main.css' , ['bootstrap-css'], filemtime(PNHUK_BUILD_CSS_DIR_PATH . '/main.css'), $media= 'all');
+    // wp_register_style($handle = 'bootstrap-css', PNHUK_DIR_URI.'/assets/src/library/css/bootstrap.min.css' , [], false, $media= 'all');
+
+    wp_register_style($handle = 'main-css', PNHUK_BUILD_CSS_URI . '/main.css' , [], filemtime(PNHUK_BUILD_CSS_DIR_PATH . '/main.css'), $media= 'all');
     // -create google font set - https://google-webfonts-helper.herokuapp.com/fonts
     // - bundled in webpack
     // wp_register_style($handle = 'fonts-css', CGR_AWPT_DIR_URI.'/assets/src/library/fonts/fonts.css' , [], false, $media= 'all');
     //
     // enqeue styles
-    wp_enqueue_style($handle='bootstrap-css');
+    // wp_enqueue_style($handle='bootstrap-css');
     wp_enqueue_style($handle='main-css');
   }
 
