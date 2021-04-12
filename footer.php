@@ -20,11 +20,15 @@
       </div>
 
       <div class="col-md-4 footer-margin">
-        <h4 class="mb-2">Quick Links</h4>
-        <a href="#" class="d-block footer-link">What is PNH?</a>
-        <a href="#" class="d-block footer-link">Signs and Symptoms</a>
-        <a href="#" class="d-block footer-link">Diagnosis</a>
-        <a href="#" class="d-block footer-link">Current Treatments</a>
+        <?php
+        if (is_active_sidebar('sidebar-2' ) ) {
+        ?>
+          <aside>
+            <?php dynamic_sidebar('sidebar-2') ?>
+          </aside>
+        <?php
+        }
+        ?>
       </div>
 
       <div class="col-md-4 footer-margin">

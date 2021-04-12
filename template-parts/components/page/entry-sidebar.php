@@ -1,1 +1,3 @@
-<h3> Something goes here... </h3>
+<aside id="secondary" roll="complementary">
+  <?php dynamic_sidebar('sidebar-1')?>
+</aside>
