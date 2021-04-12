@@ -31,8 +31,8 @@ body {
 	@include font-family();
 	@include body-text( body );
 
-	background: $color__background-body;
-	color: $color__body-text;
+	// background: $color__background-body;
+	// color: $color__body-text;
 
 	// WP Editor
 	&.mce-content-body {
