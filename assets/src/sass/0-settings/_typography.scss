@@ -2,16 +2,14 @@
 /*----------------
 		Font
 ------------------*/
+// https://fonts.google.com/specimen/Jost?query=owen+earl
 
 // Global theme font.
-$font__main: 'Lato', sans-serif;
-
+$font__main: 'Jost', sans-serif;
 // Global code font
-$font__code: 'Lato', sans-serif, monospace;
-
+$font__code: 'Jost', sans-serif, monospace;
 // Fallback font when font is not loaded via WebFonts JS.
 $font__fallback: sans-serif;
-
 // Base line height.
 $font__base-line-height: 30px;
 
