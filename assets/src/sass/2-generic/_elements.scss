@@ -227,9 +227,9 @@ ul {
 	padding: 0;
 	margin: 0 0 10px 25px;
 
-	@include mq( medium ) {
-		margin: 0 0 5px 0;
-	}
+	// @include mq( medium ) {
+	// 	margin: 0 0 5px 0;
+	// }
 }
 
 li > ul,
