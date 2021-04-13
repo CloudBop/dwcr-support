@@ -13,7 +13,7 @@ $header_menu_id = $menu_class->get_menu_id( 'pnhuk-theme-header-menu' );
 $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
+  <div class="container p-sm-0 "> <?php // m-sm-0 ?>
     
     <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo()) {
         the_custom_logo();
@@ -27,8 +27,7 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <?php if ( ! empty($header_menus) && is_array($header_menus) ) { ?>
-
-        <ul class="navbar-nav mr-auto mt-3">
+        <ul class="navbar-nav mr-auto mt-2">
           <?php
             // loop through all items in headermenu array
             foreach ($header_menus as $menu_item) {
@@ -62,11 +61,14 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
                         <?php } ?>
                       </div>
                     </li>
-                  <?php
+                    <?php
                 }
               }
             }
-          ?>
+            // this button should be in UL || !aligned?>
+            <li>
+              <a class="btn btn-outline-danger my-2 my-sm-0" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
+            </li>
         </ul>
 
       <?php } // endif ?>
@@ -78,7 +80,6 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
       </form>
       */ ?>
 
-      <a class="btn btn-outline-danger my-2 my-sm-0" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
     </div>
   </div>
 </nav>
