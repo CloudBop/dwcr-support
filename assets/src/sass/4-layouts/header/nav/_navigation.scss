@@ -10,7 +10,6 @@
 /* Nav */
 nav.navbar {
   border-bottom: #ff6161 2px solid;
-
   ul {
     margin-left: 18px;
     li {
@@ -27,4 +26,16 @@ nav.navbar {
 .nav-link {
   color: rgb(92, 89, 89);
   font-size: 18px;
+}
+
+#donate-now-nav {
+  display: none;
+}
+
+// 
+@include mq($from: large) {
+  #donate-now-nav {
+    display: inline;
+    margin-bottom: 10px;
+  }
 }

@@ -12,9 +12,10 @@ $header_menu_id = $menu_class->get_menu_id( 'pnhuk-theme-header-menu' );
 // get the header menu as [] each item is object(WP_Post)
 $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
 ?>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container p-sm-0 "> <?php // m-sm-0 ?>
-    
+<nav class="navbar navbar-expand-lg bg-white navbar-light">
+<!-- class="navbar navbar-expand-lg bg-white navbar-light " -->
+
+  <div class="container"> <?php // m-sm-0 ?>
     <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo()) {
         the_custom_logo();
       } else {
@@ -27,7 +28,8 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <?php if ( ! empty($header_menus) && is_array($header_menus) ) { ?>
-        <ul class="navbar-nav mr-auto mt-2">
+        <!-- <ul class="navbar-nav mr-auto mt-2"> -->
+          <ul class="navbar-nav ml-auto">
           <?php
             // loop through all items in headermenu array
             foreach ($header_menus as $menu_item) {
@@ -66,9 +68,9 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
               }
             }
             // this button should be in UL || !aligned?>
-            <li>
+            <!-- <li>
               <a class="btn btn-outline-danger my-2 my-sm-0" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
-            </li>
+            </li> -->
         </ul>
 
       <?php } // endif ?>
@@ -79,7 +81,8 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
       */ ?>
-
     </div>
+
+      <a id="donate-now-nav" class="btn btn-danger my-2 my-sm-0" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
   </div>
 </nav>
