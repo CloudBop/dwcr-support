@@ -8,12 +8,20 @@
 // }
 
 /* Nav */
-nav {
+nav.navbar {
   border-bottom: #ff6161 2px solid;
+
+  ul {
+    margin-left: 18px;
+    li {
+      text-align: center;
+    }
+  }
 }
 
 .pnh-logo {
   width: 125px;
+  margin-right: 1rem;
 }
 
 .nav-link {
