@@ -1,12 +1,13 @@
 /* Event Section */
 .event-wrapper {
-  background: rgb(68, 68, 68);
+  background: #343a40;
   color: #fff;
 }
 .event-number {
   font-size: 30px;
 }
-@include mq($from: xsmall) {
+
+@include mq($from: small) {
   .event-input {
     margin-bottom: 10px;
   }
