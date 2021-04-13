@@ -3,7 +3,7 @@
  * 
  * */ 
 get_header(); ?>
-<div class="not-in-use-main-wrapper">
+<div class="landing-wrapper">
   <?php 
     get_template_part('template-parts/frontpage/frontpage','section1');
     get_template_part('template-parts/frontpage/frontpage','section2');
