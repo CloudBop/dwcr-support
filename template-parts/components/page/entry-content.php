@@ -1,12 +1,11 @@
-<article <?php post_class(); ?>>
+<article class="entry-content col" <?php post_class(); ?>>
     
-    <div class="entry-content col">
+    
         <?php 
             // Gutenberg block content
             the_content() 
         ?>
-    </div>
-
+    
 </article> 
 
 
