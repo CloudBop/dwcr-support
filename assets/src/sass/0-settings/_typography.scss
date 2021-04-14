@@ -20,7 +20,15 @@ $font__base-line-height: 30px;
 $body-text: (
 	'h1': (
 		'small': (
-			font-size: 90.5px,
+			font-size: 40.5px,
+			line-height: 1.27,
+		),
+		'medium': (
+			font-size: 50.5px,
+			line-height: 1.27,
+		),
+		'large': (
+			font-size: 60.5px,
 			line-height: 1.27,
 		),
 	),
