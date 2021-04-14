@@ -7,14 +7,22 @@
   font-size: 30px;
 }
 
+/* Event Section */
+#event-section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.event-number {
+  font-size: 18px;
+  display: inline-block;
+}
+
 @include mq($from: small) {
   .event-input {
     margin-bottom: 10px;
   }
-}
-
-@include mq($until: medium) {
-  .event-input {
-    margin-bottom: 10px;
+  .event-number {
+    font-size: 30px;
   }
 }
