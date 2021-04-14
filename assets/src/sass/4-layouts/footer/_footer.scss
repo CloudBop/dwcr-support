@@ -1,10 +1,21 @@
 
 .site-footer {
-  background: #151413;
-  color: white;
+  background: #232323;
+  color: #fff;  
   // border-top: 1px solid #333;
-
+  // override default 
   ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-link, a {
+    color: #bbb;
+    font-size: 20px;
+  }
+
+  .footer-link:hover, a:hover {
+    color: #fbefef;
   }
 }

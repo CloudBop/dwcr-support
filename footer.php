@@ -11,15 +11,15 @@
 <footer class="site-footer pb-5">
   <div class="container text-center">
     <div class="row py-5">
-      <div class="col-md-4 footer-margin">
-        <h4 class="mb-2">PNH Support</h4>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h3 class="mb-2">PNH Support</h3>
         <a href="#" class="d-block footer-link">Help Center</a>
         <a href="#" class="d-block footer-link">PNH Forums</a>
         <a href="#" class="d-block footer-link">PNH Contact</a>
         <a href="#" class="d-block footer-link">Our site</a>
       </div>
 
-      <div class="col-md-4 footer-margin">
+      <div class="col-md-4 mb-3 mb-md-0">
         <?php
         if (is_active_sidebar('sidebar-2' ) ) {
         ?>
@@ -31,8 +31,8 @@
         ?>
       </div>
 
-      <div class="col-md-4 footer-margin">
-        <h4 class="mb-2">Legal</h4>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h3 class="mb-2">Legal</h3>
         <a href="#" class="d-block footer-link">Disclaimer</a>
         <a href="#" class="d-block footer-link">Privacy Notice</a>
         <a href="#" class="d-block footer-link">Constitution</a>
