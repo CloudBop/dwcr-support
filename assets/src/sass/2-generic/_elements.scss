@@ -295,7 +295,7 @@ table {
 /*------------------------------------*\
     Form Fields
 \*------------------------------------*/
-
+/*
 input, button, select, textarea {
 	font-family: $font__main;
 }
@@ -320,7 +320,7 @@ input[type="color"],
 	display: inline-block;
 	height: 20px;
 	width: 206px;
-	padding: 14px 6px; /* adjusting border-box difference on live site */
+	padding: 14px 6px; // adjusting border-box difference on live site 
 	margin: 0 0 10px;
 	line-height: 1.43;
 	color: $gray-300;
@@ -388,7 +388,7 @@ input[type="search"] {
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
-}
+} */
 
 /*------------------------------------*\
     #OTHER
