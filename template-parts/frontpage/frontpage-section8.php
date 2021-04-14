@@ -2,9 +2,13 @@
 <section id="social-section">
   <div class="container text-center my-5">
     <h2 class="mb-2">Follow Us On</h2>
-    <i class="fab fa-facebook-square p-4"></i>
-    <i class="fab fa-twitter-square p-4"></i>
-    <i class="fab fa-instagram-square p-4"></i>
+
+
+
+
+    <a href="<?php get_the_field("social_section_1"); ?>" class="fab fa-facebook-square p-4"></a>
+    <a href="<?php get_the_field("social_section_2"); ?>" class="fab fa-twitter-square p-4"></a>
+    <a href="<?php get_the_field("social_section_3"); ?>" class="fab fa-instagram-square p-4"></a>
   </div>
 </section>
 <!-- End Social Section -->

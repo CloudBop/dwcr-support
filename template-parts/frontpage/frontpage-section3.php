@@ -1,15 +1,16 @@
 <!-- Start PNH What Is Section -->
-<section id="what-is-section">
+
+<?php $section_3_image	= get_field('section_3_image'); ?>
+
+<section id="what-is-section" style="background-image: url(<?php echo $section_3_image['url']; ?>);">
   <div class="container">
       <div class="text-center">
-        <h2>
-          What Is Paroxysmal Nocturnal Haemoglobinuria (PNH)?
-        </h2>
+        <h2><?php the_field('section_3_title'); ?></h2>
         <p>
-          PNH is a rare blood disease where PNH affected blood cells are
-          attacked by the complement part of the body’s immune system.
+          
+          <?php the_field('section_3_blurb'); ?>
         </p>
-        <button class="btn btn-lg btn-danger">Read More</button>
+        <a href="<?php the_field('section_3_cta_url'); ?>" class="btn btn-lg btn-danger">  <?php the_field('section_3_cta_text'); ?></a>
       </div>
   </div>
 </section>

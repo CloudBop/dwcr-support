@@ -11,16 +11,12 @@ $section2_image	= get_field('section2_image');
         <p class="">
           <?php the_field('section2_blurb'); ?>
         </p>
-        <button class="btn btn-lg btn-danger">  <?php the_field('section2_cta'); ?></button>
+        <a href="<?php the_field('section2_cta_url'); ?>" class="btn btn-lg btn-danger">  <?php the_field('section2_cta'); ?></a>
       </div>
       <div class="col-md-6 d-flex">
          <?php // WP doesn't allow SVG... hardcoded asset the_field('section2_cta'); ?>
         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/src/img/svg/pnh-uk-map.svg" alt="" class="img-fluid mb-3 welcome-image" />
       </div>
-
-      <!-- <div class="col-sm-6 col">
-
-      </div> -->
     </div>
   </div>
 </section>
