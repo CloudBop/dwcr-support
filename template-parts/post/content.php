@@ -8,7 +8,7 @@
         </div>
     <?php } ?>
 
-    <?php // get_template_part('template-parts/post/header') ?>
+    <?php get_template_part('template-parts/post/header') ?>
     
     
     <?php if(is_single( )) { ?>
@@ -24,7 +24,7 @@
     <?php } ?>
 
     <?php if(is_single( )) { ?>
-        <?php // get_template_part('template-parts/post/footer') ?>
+        <?php  get_template_part('template-parts/post/footer') ?>
     <?php } ?>
 
     <?php  if(!is_single()) { pnhuk_readmore_link(); } ?>
