@@ -136,3 +136,22 @@ function pnhuk_excerpt_more() {
 
   return $more;
 }
+
+// allow function to overridden by child
+if( ! function_exists('_themename_post_meta') ){
+  function _themename_post_meta(){
+    printf(
+      // %s is data
+      esc_html__($text='Posted on %s', $domain = '_themename'),
+      // ISO 8601 - for best browser meta
+      '<a href="' . esc_url(get_permalink()). '">'.
+      '<time datetime="' . esc_attr(get_the_date('c')) .'">' . esc_html(get_the_date()) . "</time> </a>"
+    );
+    printf(
+      // %s is author
+      esc_html__(' By %s ', '_themename'),
+      '<a href="'. esc_url( get_author_posts_url($authorID=get_the_author_meta("ID") )) .'">'. esc_html( get_the_author()) .'</a>'
+    );
+    
+  }
+}
