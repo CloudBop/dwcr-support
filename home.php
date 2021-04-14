@@ -17,7 +17,7 @@
   <main id="main" class="site-main mt-5" role="main">
     
     <div class="container">
-      <h1>Home - Blog Post Page</h1>
+      <h1 class="text-center">News</h1>
       <div class="row">
         <div class="col-12 col-md-8">
           <?php get_template_part( 'wp-loop/loop','index' ); ?>
