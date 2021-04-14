@@ -15,7 +15,7 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
 <nav class="navbar navbar-expand-lg bg-white navbar-light">
 <!-- class="navbar navbar-expand-lg bg-white navbar-light " -->
 
-  <div class="container"> <?php // m-sm-0 ?>
+  <div class="container-fluid"> <?php // m-sm-0 ?>
     <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo()) {
         the_custom_logo();
       } else {
@@ -68,9 +68,9 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
               }
             }
             // this button should be in UL || !aligned?>
-            <!-- <li>
-              <a class="btn btn-outline-danger my-2 my-sm-0" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
-            </li> -->
+            <li>
+              <a id="donate-now-nav" class="btn btn-danger" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
+            </li>
         </ul>
 
       <?php } // endif ?>
@@ -83,6 +83,6 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
       */ ?>
     </div>
 
-      <a id="donate-now-nav" class="btn btn-danger my-2 my-sm-0" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
+      
   </div>
 </nav>

@@ -29,13 +29,18 @@ nav.navbar {
 }
 
 #donate-now-nav {
-  display: none;
+  margin: 8px 0px;
 }
 
 // 
 @include mq($from: large) {
   #donate-now-nav {
-    display: inline;
-    margin-bottom: 10px;
+    margin:0;
+    margin-left: 12px;
   }
+}
+
+.custom-logo-link{
+  padding: 5px 0;
+  width: 100px;
 }
