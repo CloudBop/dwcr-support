@@ -1,4 +1,16 @@
 /* Contact Section */
+@include mq($until: medium) {
+  /* Contact Section */
+  #contact-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact-margin {
+    margin-bottom: 20px;
+  }
+}
+
 #contact-section {
   background: #fbefef;
 
@@ -10,4 +22,8 @@
 
 .contact-card {
   background: #fff;
+}
+
+.card-link {
+  font-size: 24px;
 }
