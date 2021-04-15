@@ -124,7 +124,7 @@ function pnhuk_excerpt_more() {
 
     $more = sprintf(
       '<a class="cgr-awpt-read-more text-white" href="%1$s">
-        <button class="mt-4 btn btn-info">
+        <button class="mt-4 btn btn-danger">
           %2$s
        </button>
        </a>',
