@@ -22,8 +22,11 @@
         <div class="col-12 col-md-8">
           <?php get_template_part( 'wp-loop/loop','index' ); ?>
         </div>
-
-        <div class="col-12 col-md-4" style="background-color:purple;">test</div>
+        
+        <!-- <div class="col-12 col-md-4" 
+        style="background-color: #c8d1c5; border:3px dotted olive;">
+        test</div> -->
+        <div class="col-12 col-md-4" style="background-color: #c8d1c5; border:3px dotted olive;">test</div>
       </div>
     </div>
     
