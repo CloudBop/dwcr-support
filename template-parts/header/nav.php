@@ -41,9 +41,11 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
                 $has_children = !empty($child_menu_items) && is_array($child_menu_items);
                 // print_r($has_children);
                 if(!$has_children) {
+                  $is_donate = $menu_item->post_title;
+                  // echo strtolower(trim($is_donate));
                   ?>
                     <li class="nav-item active">
-                      <a class="nav-link" href="<?php echo esc_url($menu_item->url); ?>">
+                        <a class="nav-link  <?php echo ("donate now" == strtolower(trim($is_donate))) ? 'btn btn-danger text-white'  : '' ?>" href="<?php echo esc_url($menu_item->url); ?>">
                         <?php echo esc_html( $menu_item->title ); ?>
                         <span class="sr-only">(current)</span>
                       </a>
@@ -67,10 +69,10 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
                 }
               }
             }
+            // <li>
+            //   <a id="donate-now-nav" class="btn btn-danger" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
+            // </li>
             // this button should be in UL || !aligned?>
-            <li>
-              <a id="donate-now-nav" class="btn btn-danger" href="https://www.peoplesfundraising.com/donation/my-page-1584729095974">DONATE NOW</a>
-            </li>
         </ul>
 
       <?php } // endif ?>
@@ -81,6 +83,8 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
       */ ?>
+
+      
     </div>
 
       
