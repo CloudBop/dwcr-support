@@ -2,8 +2,8 @@
 
 // add extra text to screen reads - Google Lighthouse approves
 function pnhuk_readmore_link() {
-  echo '<a class="c-post__readmore" href=" '.get_the_permalink().' " title="'. the_title_attribute([ 'echo'=>'false' ]).'">';
 
+  echo '<a class="blog-post__readmore" href=" '.get_the_permalink().' " title="'. the_title_attribute([ 'echo'=>false ]).'">';
   printf(
     // interpolate string and escape html
     wp_kses(
@@ -134,7 +134,7 @@ function pnhuk_excerpt_more() {
 
   }
 
-  return $more;
+  return $more ."    testing";
 }
 
 // allow function to overridden by child
