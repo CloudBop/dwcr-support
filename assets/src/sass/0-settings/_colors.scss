@@ -43,6 +43,10 @@ $blue-20: #e4f3fd;
 
 $purple-800: #4046ff;
 
+
+$orange-200: #ff6161;
+$orange-100: #8f0101;
+
 /*---------------------------------
 		Opacity
 -----------------------------------*/
@@ -55,7 +59,7 @@ $opacity-black-015: rgba(0, 0, 0, 0.15);
 -----------------------------------*/
 
 $header-gradient: linear-gradient( to bottom, $black-900 0%, $black-100 100% );
-$link-hover-gradient: linear-gradient( to bottom, $blue-100 0%, $blue-200 100% );
+$link-hover-gradient: linear-gradient( to bottom, $orange-100 0%, $orange-200 100% );
 
 /*---------------------------------
 		Element Colors
@@ -66,8 +70,8 @@ $link-hover-gradient: linear-gradient( to bottom, $blue-100 0%, $blue-200 100% )
 // $color__background-body: $white;
 
 // <a>
-$color__link: $blue-100;
-$color__link-hover: $blue-500;
+$color__link: $orange-100;
+$color__link-hover: $orange-200;
 
 $color__background-button: $gray-100;
 $color__background-button-hover: $gray-100;
