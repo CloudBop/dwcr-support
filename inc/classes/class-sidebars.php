@@ -51,6 +51,17 @@ class Sidebars {
       'before_title'  => '<h3 class="widget-title">',
       'after_title'   => '</h3>',
     ));
+
+
+    register_sidebar(array(
+      'name'          => esc_html__( 'News sb', 'pnhuk-theme'),
+      'id'            => 'sidebar-3',
+      'description'   => __( 'News Sidebar', 'pnhuk-theme'),
+      'before_widget' => '<div id="%1$s class="widget widget-footer cell column %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>',
+    ));
   }
 
 
