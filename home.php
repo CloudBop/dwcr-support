@@ -1,5 +1,5 @@
 <?php
-/** 
+/**  - the news list page
  * home.php 
  * - the page template for displaying list of blog posts 
  * - ignore filename, home.php refers to the page with all blog posts
@@ -15,18 +15,60 @@
 
 <div id="primary">
   <main id="main" class="site-main mt-5" role="main">
-    
     <div class="container">
-      <h1 class="text-center">News</h1>
+      <h1 class="text-center py-5">News</h1>
       <div class="row">
         <div class="col-12 col-md-8">
-          <?php get_template_part( 'wp-loop/loop','index' ); ?>
+          
+        <?php if(have_posts()) { ?>
+          <?php while(have_posts()) { ?>
+              <?php the_post(); ?>
+
+              <article <?php // echo post_class(); ?> >
+
+                <?php if(get_the_post_thumbnail() !== '') { ?>
+                    <div class="">
+                        <?php 
+                        // TODO - configure thumbnails for correct sizing
+                        the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>
+                    </div>
+                <?php } ?>
+                <?php get_template_part('template-parts/post/header') ?>  
+
+                <?php if(is_single( )) { ?>
+                    <h1> tester </h1>
+                        <?php the_content(); 
+                        wp_link_pages();
+                        ?>
+                    
+                <?php } else { ?>
+                    
+                    <?php the_excerpt(); ?>
+                    
+                <?php } ?>
+
+                <?php if(is_single( )) { ?>
+                    <?php  get_template_part('template-parts/post/footer') ?>
+                <?php } ?>
+
+                <?php  if(!is_single()) { 
+                  pnhuk_readmore_link(); 
+                } 
+                ?>
+
+            </article>
+          <?php } ?>
+        <?php } else { ?>
+            <?php get_template_part('template-parts/post/content','none'); ?>
+        <?php } ?>
         </div>
         
         <!-- <div class="col-12 col-md-4" 
         style="background-color: #c8d1c5; border:3px dotted olive;">
         test</div> -->
-        <div class="col-12 col-md-4" style="background-color: #c8d1c5; border:3px dotted olive;">test</div>
+        <aside class="col-12 col-md-4 aside-home">
+          <?php dynamic_sidebar('sidebar-3'); ?>
+        </aside>
       </div>
     </div>
     
