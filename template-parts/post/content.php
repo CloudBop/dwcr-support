@@ -1,7 +1,7 @@
 <article <?php echo post_class(); ?> >
 
     <?php if(get_the_post_thumbnail() !== '') { ?>
-        <div class="c-post__thumbnail">
+        <div class="">
             <?php 
             // TODO - configure thumbnails for correct sizing
             the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>
@@ -9,7 +9,6 @@
     <?php } ?>
 
     <?php get_template_part('template-parts/post/header') ?>
-    
     
     <?php if(is_single( )) { ?>
         
@@ -28,6 +27,5 @@
     <?php } ?>
 
     <?php  if(!is_single()) { pnhuk_readmore_link(); } ?>
-
 
 </article>
