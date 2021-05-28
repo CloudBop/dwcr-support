@@ -1,11 +1,31 @@
 // wordpress added class
 .blog {
+
   article {
     min-height: 300px;
     // border-radius: 16px;
-    border: 2px solid grey;
-    margin: 24px 0;
-    padding: 0;
+    border: 1px solid grey;
+    margin: 1rem 0;
+    // padding: 1rem;
+
+    > p, > a, > header {
+      padding: 1rem;
+    }
   }
 
+  article:first-child{
+    margin-top: 0;
+  }
+
+  aside {
+    // background-color: lightblue;
+    // border-radius: 0.5rem;
+    // padding-top: 1rem;
+  }
+
+}
+
+.aside-home {
+  // background-color: rgb(228, 188, 238);
+  border-left: rgb(228, 188, 238) 16px solid;
 }
