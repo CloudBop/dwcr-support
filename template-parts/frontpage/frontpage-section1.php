@@ -3,7 +3,22 @@
 $section1_image	= get_field('section_1_image');
 // Todo
 /* <img class="img-fluid" src="<?php echo $section1_image['url']; ?>" alt="<?php echo $section1_image['alt']; ?>">*/
+
+
+
+//
+// http://pnhukorg-org.stackstaging.com
+//
+
+
+
 ?>
+<section>
+  <pre>
+    <?php echo print_r($section1_image); ?>
+  </pre>
+</section>
+
 <!-- Start Hero Section -->
 <section class="col-12 p-0">
  
