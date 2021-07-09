@@ -9,8 +9,6 @@
         </main>
         <aside class="col-sm-4 sidebar-content danger">
             <?php dynamic_sidebar('sidebar-1'); ?>
-            This is where the sidebar goes, no registered sidebars as of yet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis cupiditate cumque ad quidem placeat! A doloribus nobis nostrum fugit quidem aliquam error assumenda, harum dolore totam necessitatibus placeat? Officiis?
         </aside>
     </div>
 </div>

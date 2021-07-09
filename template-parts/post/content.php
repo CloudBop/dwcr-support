@@ -10,16 +10,13 @@
 
     <?php get_template_part('template-parts/post/header') ?>
     
-    <?php if(is_single( )) { ?>
-        
-            <?php the_content(); 
+    <?php if(is_single()) { ?>
+        <?php 
+            the_content(); 
             wp_link_pages();
-            ?>
-        
+        ?>
     <?php } else { ?>
-        
         <?php the_excerpt(); ?>
-        
     <?php } ?>
 
     <?php if(is_single( )) { ?>
