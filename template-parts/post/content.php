@@ -1,4 +1,4 @@
-<article <?php echo post_class(); ?> >
+<article <?php echo post_class();?> >
 
     <?php if(get_the_post_thumbnail() !== '') { ?>
         <div class="">
@@ -24,5 +24,10 @@
     <?php } ?>
 
     <?php  if(!is_single()) { pnhuk_readmore_link(); } ?>
+
+    <?php
+        echo ":  ".is_page();
+        echo ":   ".is_single();
+    ?>
 
 </article>

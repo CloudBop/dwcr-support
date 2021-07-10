@@ -2,17 +2,24 @@
 // render Page, ie NOT post 
 ?>
 <main class="main-content">
-  <?php get_template_part('template-parts/components/page/entry-header'); ?>
+  <?php get_template_part('template-parts/page/entry-header'); ?>
   <div class="container">
     <div class="row">
-    <?php if(have_posts()) { ?>
-      <?php while(have_posts()) { ?>
-        <?php // https://developer.wordpress.org/reference/functions/the_post/ 
+      <?php if(have_posts()) { ?>
+        <?php while(have_posts()) { ?>
+          <?php // https://developer.wordpress.org/reference/functions/the_post/ 
         the_post(); ?>
-            <div class="col">
+            <div class="col-sm-8">
+              <?php wbn_breadcrumb(); ?>
+              
               <?php //get_template_part('template-parts/components/page/entry-header'); ?>
-              <?php get_template_part('template-parts/components/page/entry-content'); ?>
-              <?php get_template_part('template-parts/components/page/entry-footer'); ?>
+              <?php get_template_part('template-parts/page/entry-content'); ?>
+              <?php get_template_part('template-parts/page/entry-footer'); ?>
+              <small>page-template</small>
+            </div>
+
+            <div class="col-sm-4">
+              
             </div>
           <?php 
           // if (comments_open() || get_comments_number() ) {
