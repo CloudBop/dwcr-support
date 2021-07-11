@@ -8,7 +8,7 @@
             <?php get_template_part( 'wp-loop/loop', 'single' ); ?>
         </main>
         <aside class="col-sm-4 sidebar-content danger">
-            <?php dynamic_sidebar('sidebar-1'); ?>
+            <?php dynamic_sidebar('sidebar-3'); ?>
         </aside>
     </div>
 </div>
