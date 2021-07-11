@@ -11,13 +11,12 @@ $section1_image	= get_field('section_1_image');
 //
 
 
-
+// <section>
+//   <pre>
+//     <?php echo print_r($section1_image); ?<  
+//   </pre>
+// </section>
 ?>
-<section>
-  <pre>
-    <?php echo print_r($section1_image); ?>
-  </pre>
-</section>
 
 <!-- Start Hero Section -->
 <section class="col-12 p-0">
