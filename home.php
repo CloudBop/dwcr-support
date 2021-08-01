@@ -10,9 +10,14 @@
  */
 ?>
 <?php get_header();?>
-<div id="primary">
+<header class="entry-header">
+  <!-- background image -->
+  <h1 class="" style="z-index:100"> 
+    News
+  </h1>
+</header>
+
   <div class="container">
-    <h1 class="text-center py-5">News</h1>
       <div class="row">
         <div class="col-12 col-md-8">
           <main id="main" class="site-main" role="main">
@@ -22,7 +27,7 @@
               // each blog post
               while(have_posts()) { ?>
               <?php the_post(); ?>
-              <article <?php // echo post_class(); ?> >
+              <article <?php echo post_class('mt-2'); ?> >
                 <?php if(get_the_post_thumbnail() !== '') { ?>
                     <div class="">
                       <?php 
@@ -45,8 +50,8 @@
       <!-- <div class="col-12 col-md-4" 
       style="background-color: #c8d1c5; border:3px dotted olive;">
       test</div> -->
-      <aside class="col-12 col-md-4 aside-home">
-        <?php dynamic_sidebar('sidebar-3'); ?>
+      <aside class="col-12 col-md-4 mt-2">
+        <?php dynamic_sidebar('sidebar-primary'); ?>
       </aside>
     </div>
   </div>
