@@ -3,7 +3,7 @@
 // add extra text to screen reads - Google Lighthouse approves
 function pnhuk_readmore_link() {
 
-  echo '<a class="blog-post__readmore" href=" '.get_the_permalink().' " title="'. the_title_attribute([ 'echo'=>false ]).'">';
+  echo '<a class="blog-post__readmore btn btn-danger mx-auto" href=" '.get_the_permalink().' " title="'. the_title_attribute([ 'echo'=>false ]).'">';
   printf(
     // interpolate string and escape html
     wp_kses(
@@ -144,14 +144,14 @@ if( ! function_exists('_themename_post_meta') ){
       // %s is data
       esc_html__($text='Posted on %s', $domain = '_themename'),
       // ISO 8601 - for best browser meta
-      '<a href="' . esc_url(get_permalink()). '">'.
-      '<time datetime="' . esc_attr(get_the_date('c')) .'">' . esc_html(get_the_date()) . "</time> </a>"
+      // '<a href="' . esc_url(get_permalink()). '">'.
+      '<time datetime="' . esc_attr(get_the_date('c')) .'">' . esc_html(get_the_date()) . "</time>" //</a>"
     );
-    printf(
-      // %s is author
-      esc_html__(' By %s ', '_themename'),
-      '<a href="'. esc_url( get_author_posts_url($authorID=get_the_author_meta("ID") )) .'">'. esc_html( get_the_author()) .'</a>'
-    );
+    // printf(
+    //   // %s is author
+    //   esc_html__(' By %s ', '_themename'),
+    //   '<a href="'. esc_url( get_author_posts_url($authorID=get_the_author_meta("ID") )) .'">'. esc_html( get_the_author()) .'</a>'
+    // );
     
   }
 }
