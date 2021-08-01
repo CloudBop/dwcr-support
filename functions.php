@@ -1,4 +1,7 @@
 <?php
+require_once('widgets/class-wp-widget-recent-posts.php');
+require_once('widgets/class-wp-widget-archives-bs4.php');
+require_once('widgets/class-wp-widget-pages-bs4.php');
 // Set constants these are global and be used within any classes
 //
 if ( !defined( 'PNHUK_DIR_PATH') ) {
@@ -41,3 +44,14 @@ function pnhuk_get_theme_instance() {
 }
 pnhuk_get_theme_instance();
 // end of initialization
+
+// Register Widgets
+function pnhuk_register_widgets(){
+	register_widget('WP_Widget_Recent_Posts_Custom');
+	register_widget('WP_Widget_Archives_BS4');
+	register_widget('WP_Widget_Pages_BS4');
+	// register_widget('WP_Widget_Recent_Comments_Custom');
+	// register_widget('WP_Widget_Categories_Custom');
+}
+
+add_action('widgets_init','pnhuk_register_widgets');
