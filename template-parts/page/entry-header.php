@@ -14,12 +14,11 @@
   </header>
 </div>
 
-  <div id="page-breadcrumbs">
-    <div class="container py-2">
-      <div class="row">
-        <div class="col">
-          <?php pnhuk_breadcrumb(); ?>
-        </div>
+<div id="page-breadcrumbs" class="mb-3">
+  <div class="container py-2">
+    <div class="row">
+      <div class="col">
+        <?php pnhuk_breadcrumb(); ?>
       </div>
     </div>
   </div>
