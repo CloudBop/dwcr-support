@@ -8,7 +8,7 @@ function pnhuk_readmore_link() {
     // interpolate string and escape html
     wp_kses(
       // %s === get_the_title
-      __ ('Read more <span class="u-screen-reader-text">About %s </span> ', '_themename'),
+      __ ('Read more <span class="u-screen-reader-text sr-only">About %s </span> ', '_themename'),
       // , with exception to this element
       [
         'span' => [
