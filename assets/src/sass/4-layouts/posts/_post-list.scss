@@ -1,28 +1,21 @@
 // wordpress added class
 .blog {
 
-  article {
-    min-height: 300px;
+  // DO NOT USE THIS SELECTOR
+  article.news-post{
+    // min-height: 300px;
     background-color: white;
     // border-radius: 16px;
-    border: 1px solid grey;
-    margin: 1rem 0;
-    // padding: 1rem;
-
-    > p, > a, > header {
-      padding: 1rem;
-      padding-bottom: 0;
+    border: $card-border-width solid $card-border-color;
+    @include border-radius($card-border-radius);
+    margin: 0 0 1rem 0;
+    
+    .excerpt {
+      margin-top: 0.5rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
     }
   }
-
-  article:first-child{
-    margin-top: 0;
-  }
-
-  // aside {
-    // background-color: lightblue;
-    // border-radius: 0.5rem;
-    // padding-top: 1rem;
-  // }
-
 }
+
