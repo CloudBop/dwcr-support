@@ -12,7 +12,7 @@
   <div class="container text-center">
     <div class="row py-5">
       <div class="col-md-4 mb-3 mb-md-0">
-        <h3 class="mb-2">PNH Support</h3>
+        <h3 class="mb-2">Spare Widget</h3>
         <a href="#" class="d-block footer-link">Help Center</a>
         <a href="#" class="d-block footer-link">PNH Forums</a>
         <a href="#" class="d-block footer-link">PNH Contact</a>
@@ -21,22 +21,35 @@
 
       <div class="col-md-4 mb-3 mb-md-0">
         <?php
-        if (is_active_sidebar('sidebar-2' ) ) {
+        if (is_active_sidebar('sidebar-footer' ) ) {
         ?>
           <aside>
-            <?php dynamic_sidebar('sidebar-2') ?>
+            <?php dynamic_sidebar('sidebar-footer') ?>
           </aside>
         <?php
         }
         ?>
       </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <?php
+        if (is_active_sidebar('sidebar-footer-legal' ) ) {
+        ?>
+          <aside>
+            <?php dynamic_sidebar('sidebar-footer-legal') ?>
+          </aside>
+        <?php
+        } else { ?>
+          <h3 class="mb-2">Legal update me</h3>
+          <a href="#" class="d-block footer-link">Disclaimer</a>
+          <a href="#" class="d-block footer-link">Privacy Notice</a>
+          <a href="#" class="d-block footer-link">Constitution</a>
+          <a href="#" class="d-block footer-link">Members T&C</a>
+        <? }
+        ?>
+      </div>
 
       <div class="col-md-4 mb-3 mb-md-0">
-        <h3 class="mb-2">Legal</h3>
-        <a href="#" class="d-block footer-link">Disclaimer</a>
-        <a href="#" class="d-block footer-link">Privacy Notice</a>
-        <a href="#" class="d-block footer-link">Constitution</a>
-        <a href="#" class="d-block footer-link">Members T&C</a>
+        
       </div>
     </div>
     <h4>PNH SUPPORT</h4>
