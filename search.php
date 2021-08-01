@@ -11,7 +11,7 @@
 				<?php while(have_posts()) : the_post(); ?>
 				
           <?php if(get_the_post_thumbnail() !== '') { ?>
-            <div class="">
+            <div class="img-fluid">
             <?php 
               // TODO - configure thumbnails for correct sizing
               the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>
@@ -31,8 +31,8 @@
 		</div>
 
 		<div class="side">
-			<?php if(is_active_sidebar('sidebar')) : ?>
-				<?php dynamic_sidebar('sidebar'); ?>
+			<?php if(is_active_sidebar('page-sidebar')) : ?>
+				<?php dynamic_sidebar('page-sidebar'); ?>
 			<?php endif; ?>
 		</div>
 	</div>

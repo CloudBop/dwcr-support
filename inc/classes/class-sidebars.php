@@ -32,41 +32,52 @@ class Sidebars {
 
   public function register_sidebars(){
     //
+    // register_sidebar(array(
+    //   // Primary
+    //   'name'          => esc_html__( 'Sidebar', 'pnhuk-theme'),
+    //   'id'            => 'sidebar',
+    //   'description'   => __( 'Main Sidebar', 'pnhuk-theme'),
+    //   'before_widget' => '<div id="%1$s" class="widget widget-sidebar %2$s">',
+    //   'after_widget'  => '</div>',
+    //   'before_title'  => '<h3 class="widget-title">',
+    //   'after_title'   => '</h3>',
+    // ));
+
     register_sidebar(array(
-      'name'          => esc_html__( 'Sidebar', 'pnhuk-theme'),
-      'id'            => 'sidebar-1',
-      'description'   => __( 'Main Sidebar', 'pnhuk-theme'),
-      'before_widget' => '<div id="%1$s class="widget widget-sidebar %2$s">',
+      'name'          => esc_html__( 'News/Posts sidebar', 'pnhuk-theme'),
+      'id'            => 'news-posts-sidebar',
+      'description'   => __( 'News Sidebar', 'pnhuk-theme'),
+      'before_widget' => '<div id="%1$s" class="widget  %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widget-title">',
       'after_title'   => '</h3>',
     ));
 
     register_sidebar(array(
+      'name'          => esc_html__( 'Pages Sidebar', 'pnhuk-theme'),
+      'id'            => 'page-sidebar',
+      'description'   => __( 'Page Sidebar', 'pnhuk-theme'),
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<header class="widget-title">',
+      'after_title'   => '</header>',
+    ));
+    // footers
+    register_sidebar(array(
+      // footer quick links
       'name'          => esc_html__( 'Footer sb', 'pnhuk-theme'),
-      'id'            => 'sidebar-2',
+      'id'            => 'sidebar-footer',
       'description'   => __( 'Footer Sidebar', 'pnhuk-theme'),
       'before_widget' => '<div id="%1$s class="widget widget-footer cell column %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widget-title">',
       'after_title'   => '</h3>',
     ));
-
-
     register_sidebar(array(
-      'name'          => esc_html__( 'News sb', 'pnhuk-theme'),
-      'id'            => 'sidebar-3',
-      'description'   => __( 'News Sidebar', 'pnhuk-theme'),
-      'before_widget' => '<div id="%1$s class="widget widget-footer cell column %2$s">',
-      'after_widget'  => '</div>',
-      'before_title'  => '<h3 class="widget-title">',
-      'after_title'   => '</h3>',
-    ));
-
-    register_sidebar(array(
-      'name'          => esc_html__( 'Page sb', 'pnhuk-theme'),
-      'id'            => 'sidebar-4',
-      'description'   => __( 'Page Sidebar', 'pnhuk-theme'),
+      // footer quick links
+      'name'          => esc_html__( 'Footer-legal sb', 'pnhuk-theme'),
+      'id'            => 'sidebar-footer-legal',
+      'description'   => __( 'Footer Sidebar', 'pnhuk-theme'),
       'before_widget' => '<div id="%1$s class="widget widget-footer cell column %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widget-title">',

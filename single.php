@@ -7,8 +7,8 @@
         <main class="col-sm-8 main-content">
             <?php get_template_part( 'wp-loop/loop', 'single' ); ?>
         </main>
-        <aside class="col-sm-4 sidebar-content danger">
-            <?php dynamic_sidebar('sidebar-3'); ?>
+        <aside class="col-sm-4 sidebar-content">
+            <?php dynamic_sidebar('news-posts-sidebar'); ?>
         </aside>
     </div>
 </div>

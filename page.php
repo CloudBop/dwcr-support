@@ -18,15 +18,14 @@
               </main>
             </div>
 
-            <div class="col-sm-4 mt-3 pr-0 page-sidebar">
+            <aside class="col-sm-4 pr-0 page-sidebar">
               <?php
                 
                 // DONE:TODO add this as widget - left in case error.
                 // pnhuk_get_family_tree($post);
-
-                dynamic_sidebar('sidebar-page-children');
+                dynamic_sidebar('page-sidebar');
               ?>                        
-            </div>
+            </aside>
           <?php 
           // if (comments_open() || get_comments_number() ) {
           //     comments_template();

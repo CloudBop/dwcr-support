@@ -57,7 +57,7 @@
       </main>
     </section>   
     <aside class="col-12 col-md-4 aside-home">
-      <?php dynamic_sidebar('sidebar-primary'); ?>
+      <?php dynamic_sidebar('page-sidebar'); ?>
     </aside>
   </div>
 
