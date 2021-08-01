@@ -94,6 +94,9 @@ class PNHUK_THEME_ENTRY {
     // remove all core block patterns
     // remove_theme_support($feature='core-block-patterns');
 
+    // 
+    remove_theme_support("widgets-block-editor");
+
     // set wordpress global width 
     global $content_width;
     if( ! isset( $content_width ) ) {
