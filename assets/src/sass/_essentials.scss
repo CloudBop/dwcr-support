@@ -3,12 +3,12 @@
 // Toggle global options
 $enable-gradients: true;
 $enable-shadows: true;
+@import "custom-bs-overrrides"; // override bootstrap defaults
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
 
-@import "custom-bs-overrrides"; // override bootstrap defaults
 
 @import "bootstrap/scss/root"; // Required
 @import "bootstrap/scss/reboot"; // Required

@@ -5,14 +5,60 @@
 $body-color: #333;
 $body-bg: #ffffff;
 $border-radius: .4rem;
-$success: #7952b3;
+// $success: #7952b3;
 
 // double check these are working
 // $link-hover-color:                        lighten(#140202, 23%);
 // $link-hover-decoration:                   overline;
+// may make nice branding
+$lightOrange:     #f1b252 !default;
 
-// will remove un-named colors if not included eg, danger
-// $theme-colors:(
-//     // default link color
-//     "primary": #a39cdf
-// );
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+// Changing Bootstrap Theme Colors
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #f15252 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "quaternary": #6e30d3
+);
+
+$navbar-light-color: rgb(77, 68, 68);
+$navbar-light-active-color: #000;
+$navbar-light-hover-color: $danger;
+// $navbar-light-disabled-color: #F3EFE6;
+
