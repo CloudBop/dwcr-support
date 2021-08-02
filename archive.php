@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<header class="entry-header">
+<header class="entry-header mb-3">
   <!-- background image -->
   <!-- <h1 class="" style="z-index:100">
     <?php the_title() ?>
