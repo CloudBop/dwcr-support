@@ -1,11 +1,18 @@
-<?php $search_terms = htmlspecialchars( $_GET["s"] ); ?>
-
-<form class="form-inline" role="form" action="<?php bloginfo('siteurl'); ?>/" id="searchform" method="get">
-    <label for="s" class="sr-only">Search</label>
-    <div class="input-group">
-        <input type="search" class="form-control" aria-label="Search" id="s" name="s" placeholder="Search..."<?php if ( $search_terms !== '' ) { echo ' value="' . $search_terms . '"'; } ?> />
-        <span class="input-group-btn">
-            <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-        </span>
-    </div> <!-- .input-group -->
-</form>
+<div class="container p-2">
+  <form role="search" method="get" class="form search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<div class="input-group">
+      <span class="sr-text">
+      	<?php _x('Search for:', 'label', 'dwcr-support'); ?>
+      </span>
+      <input 
+	      name="s" 
+	      type="text" 
+	      class="form-control" 
+	      name="s" 
+	      placeholder="<?php echo esc_attr_x('Search', $context='placeholder', $domain="dwcr-support");?>" value="<?php the_search_query(); ?>">
+      <span class="input-group-btn">
+        <button type="submit" value="Search" class="btn btn-danger" type="button"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;</button>
+      </span>
+    </div>
+    </form>
+</div>
