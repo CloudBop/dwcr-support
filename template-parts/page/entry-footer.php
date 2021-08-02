@@ -6,5 +6,5 @@
 ?>
 
 <footer class="entry-footer">
-  <hr>
+  <!-- <hr> -->
 </footer>
