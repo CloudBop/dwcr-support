@@ -64,7 +64,7 @@ class WP_Widget_Pages_BS4 extends WP_Widget {
 
 		if( $currentPage->post_parent===0){
 			// this page has no parent -> does page have children?
-			$pagesToArchive = get_pages( array( 'child_of' => $currentPage->ID, 'sort_order' => 'desc', 'sort-column'=>'menu_order' ) );
+			$pagesToArchive = get_pages( array( 'child_of' => $currentPage->ID, 'sort_order' => 'desc', 'sort_column'=>'menu_order' ) );
 			$title = "<strong>".$currentPage->post_title."</strong>";
 		} else {
 			// get array of ancestor ids
@@ -78,7 +78,7 @@ class WP_Widget_Pages_BS4 extends WP_Widget {
 			$grandParent = get_post($ancestors[$root-1]);
 			// current page is an ancestor of something, don't worry about grandchild pages for the moment. 
 			$title = "<strong> <a href=".get_permalink($ancestors[$root-1]).">".  get_the_title($ancestors[$root-1]) ."</a>  </strong>";
-			$pagesToArchive = get_pages( array( 'child_of' => $ancestors[$root-1], 'sort_order' => 'desc', 'sort-column'=>'menu_order' ) );
+			$pagesToArchive = get_pages( array( 'child_of' => $ancestors[$root-1], 'sort_order' => 'desc', 'sort_column'=>'menu_order' ) );
 		}
 		$args['before_title'] = "<div class='card-header'>";
 		$args['after_title'] = "</div>";
@@ -121,7 +121,7 @@ class WP_Widget_Pages_BS4 extends WP_Widget {
 		// 	echo "<br>";
 		// 	$hasChildren = get_pages(array(
 		// 		'child_of'=>$currentPost->ID,
-		// 		'sort_order' => 'desc', 'sort-column'=>'menu_order'
+		// 		'sort_order' => 'desc', 'sort_column'=>'menu_order'
 		// 	)); // could try get_children(), but rcurrently retusn other child objs eg events
 			
 		// 	// bailout here
