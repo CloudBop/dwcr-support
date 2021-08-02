@@ -62,6 +62,15 @@ class Sidebars {
       'before_title'  => '<header class="widget-title">',
       'after_title'   => '</header>',
     ));
+    register_sidebar(array(
+      'name'          => esc_html__( 'TOC+ Sidebar', 'pnhuk-theme'),
+      'id'            => 'contents-sidebar',
+      'description'   => __( 'Contents Sidebar', 'pnhuk-theme'),
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<header class="widget-title">',
+      'after_title'   => '</header>',
+    ));
     // footers
     register_sidebar(array(
       // footer quick links
