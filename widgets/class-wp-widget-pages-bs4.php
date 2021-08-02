@@ -24,7 +24,7 @@ class WP_Widget_Pages_BS4 extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname'                   => 'widget_pages card',
-			'description'                 => __( 'A list of your site&#8217;s Pages.' ),
+			'description'                 => __( 'A list of the current page hierarchy, if no hierarchy the list will not be rendered' ),
 			'customize_selective_refresh' => true,
 			'show_instance_in_rest'       => true,
 			// don't seem to be passed to widget
@@ -181,7 +181,7 @@ class WP_Widget_Pages_BS4 extends WP_Widget {
 			// }
 		} else {
 			// there should be no output
-			echo 'there should be not output';
+			// echo 'there should be not output';
 		}
 	}
 
@@ -228,8 +228,7 @@ class WP_Widget_Pages_BS4 extends WP_Widget {
 		);
 		?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['title'] ); ?>" />
+			A list of the current page hierarchy, if no hierarchy the list will not be rendered
 		</p>
 
 		<!-- **** -->
@@ -241,6 +240,8 @@ class WP_Widget_Pages_BS4 extends WP_Widget {
 
 /**
  * <p>
+ * <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['title'] ); ?>" />
 			<label for="<?php echo esc_attr( $this->get_field_id( 'sortby' ) ); ?>"><?php _e( 'Sort by:' ); ?></label>
 			<select name="<?php echo esc_attr( $this->get_field_name( 'sortby' ) ); ?>" id="<?php echo esc_attr( $this->get_field_id( 'sortby' ) ); ?>" class="widefat">
 				<option value="post_title"<?php selected( $instance['sortby'], 'post_title' ); ?>><?php _e( 'Page title' ); ?></option>
