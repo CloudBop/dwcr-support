@@ -1,5 +1,27 @@
 <?php
+function cgr_awpt_pagination() {
 
+  $allowed_tags = [ 
+    'a' => [ 
+      'class'=>[],
+      'href'=>[]
+    ], 
+    'span' => [ 
+      'class'=>[]
+    ]
+  ];
+  
+  // wrapper tag
+  $args = [
+    'before_page_number' => '<span class="btn border btn-danger border-secondary mr-2 mb-2">',
+    'after_page_number' => '</span>'
+  ];
+  
+  printf( 
+    '<nav class="cgr-awpt-pagination clearfix">%s</nav>', 
+    wp_kses( paginate_links($args), $allowed_tags )  
+  );
+}
 // add extra text to screen reads - Google Lighthouse approves
 function pnhuk_readmore_link() {
 
@@ -231,3 +253,5 @@ function pnhuk_breadcrumb(){
 				</div>
 
 <?php } ?>
+
+
