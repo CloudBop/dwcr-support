@@ -40,4 +40,5 @@ get_header();
     <?php }  // end if else ?>
     </div>
   </div>
+  <div id="stop-table-of-contents" class="clearfix"> </div>
 <?php get_footer(); ?> 
