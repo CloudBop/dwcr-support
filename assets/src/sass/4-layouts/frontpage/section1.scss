@@ -1,7 +1,9 @@
 // landing overwrites
 .landing-wrapper {
-  
-  h1,h2,h3,h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-weight: bold;
   }
 
@@ -78,7 +80,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+  position: fixed;
   color: #fff;
   height: 100vh;
 }
