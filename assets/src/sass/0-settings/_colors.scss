@@ -1,8 +1,6 @@
-
 /*---------------------------------
 		Colors Variables
 -----------------------------------*/
-
 
 /*---------------------------------
 		Colors Variables
@@ -25,7 +23,7 @@ $dark-gray-100: #424242;
 
 $gray-100: #eff3f6;
 $gray-150: #eeeeee;
-$gray-160: #E2EAEE;
+$gray-160: #e2eaee;
 $gray-200: #cccccc;
 $gray-300: #555555;
 
@@ -43,10 +41,6 @@ $blue-20: #e4f3fd;
 
 $purple-800: #4046ff;
 
-
-$orange-200: #ff6161;
-$orange-100: #8f0101;
-
 /*---------------------------------
 		Opacity
 -----------------------------------*/
@@ -58,8 +52,12 @@ $opacity-black-015: rgba(0, 0, 0, 0.15);
 		Gradient
 -----------------------------------*/
 
-$header-gradient: linear-gradient( to bottom, $black-900 0%, $black-100 100% );
-$link-hover-gradient: linear-gradient( to bottom, $orange-100 0%, $orange-200 100% );
+$header-gradient: linear-gradient(to bottom, $black-900 0%, $black-100 100%);
+
+$offHover: $pnhorg;
+$onHover: #ad5811;
+
+$link-hover-gradient: linear-gradient(to bottom, offHoverer 0%, $onHover 100%);
 
 /*---------------------------------
 		Element Colors
@@ -70,8 +68,8 @@ $link-hover-gradient: linear-gradient( to bottom, $orange-100 0%, $orange-200 10
 // $color__background-body: $white;
 
 // <a>
-$color__link: $orange-100;
-$color__link-hover: $orange-200;
+$color__link: $offHover;
+$color__link-hover: $onHover;
 
 $color__background-button: $gray-100;
 $color__background-button-hover: $gray-100;
@@ -97,4 +95,3 @@ $color__border-light: $gray-100;
 $color__border-fieldset: $gray-200;
 $color__border-table: $gray-200;
 $color__border-header: $gray-300;
-
