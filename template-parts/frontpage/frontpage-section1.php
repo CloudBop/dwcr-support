@@ -33,7 +33,7 @@ $section1_image	= get_field('section_1_image');
             <p>
               <?php the_field('section_1_blurb'); ?>
             </p>
-            <a href="<?php the_field('section_1_cta_url'); ?>" class="btn btn-lg pnh-red-button"><?php the_field('section_1_cta_text'); ?></a>
+            <a href="<?php the_field('section_1_cta_url'); ?>" class="btn btn-lg btn-pnhorg"><?php the_field('section_1_cta_text'); ?></a>
           </div>
         </div>
       </div>

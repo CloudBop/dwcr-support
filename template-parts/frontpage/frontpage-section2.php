@@ -11,7 +11,7 @@ $section2_image	= get_field('section2_image');
         <p class="">
           <?php the_field('section2_blurb'); ?>
         </p>
-        <a href="<?php the_field('section2_cta_url'); ?>" class="btn btn-lg btn-danger">  <?php the_field('section2_cta'); ?></a>
+        <a href="<?php the_field('section2_cta_url'); ?>" class="btn btn-lg btn-pnhorg">  <?php the_field('section2_cta'); ?></a>
       </div>
       <div class="col-md-6 d-flex">
          <?php // WP doesn't allow SVG... hardcoded asset the_field('section2_cta'); ?>

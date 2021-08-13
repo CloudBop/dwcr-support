@@ -10,7 +10,7 @@
           
           <?php the_field('section_3_blurb'); ?>
         </p>
-        <a href="<?php the_field('section_3_cta_url'); ?>" class="btn btn-lg btn-danger">  <?php the_field('section_3_cta_text'); ?></a>
+        <a href="<?php the_field('section_3_cta_url'); ?>" class="btn btn-lg btn-pnhorg">  <?php the_field('section_3_cta_text'); ?></a>
       </div>
   </div>
 </section>
