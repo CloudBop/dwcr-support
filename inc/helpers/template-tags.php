@@ -253,5 +253,3 @@ function pnhuk_breadcrumb(){
 				</div>
 
 <?php } ?>
-
-
