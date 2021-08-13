@@ -92,6 +92,27 @@ class Sidebars {
       'before_title'  => '<h3 class="widget-title">',
       'after_title'   => '</h3>',
     ));
+
+    register_sidebar(array(
+      // frontpage, for events plugins
+      'name'          => esc_html__( 'Front-Page sb', 'pnhuk-theme'),
+      'id'            => 'sidebar-front-page',
+      'description'   => __( 'Frontpage Sidebar', 'pnhuk-theme'),
+      'before_widget' => '<div id="%1$s class="widget widget-footer cell column %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>',
+    ));
+    register_sidebar(array(
+      // Twitter, for events plugins
+      'name'          => esc_html__( 'Twitter sb', 'pnhuk-theme'),
+      'id'            => 'sidebar-twitter',
+      'description'   => __( 'Twitter Sidebar', 'pnhuk-theme'),
+      'before_widget' => '<div id="%1$s class="widget widget-footer cell column %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>',
+    ));
   }
 
 
