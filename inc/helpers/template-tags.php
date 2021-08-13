@@ -13,7 +13,7 @@ function cgr_awpt_pagination() {
   
   // wrapper tag
   $args = [
-    'before_page_number' => '<span class="btn border btn-danger border-secondary mr-2 mb-2">',
+    'before_page_number' => '<span class="btn border btn-pnhorg border-secondary mr-2 mb-2">',
     'after_page_number' => '</span>'
   ];
   
@@ -25,7 +25,7 @@ function cgr_awpt_pagination() {
 // add extra text to screen reads - Google Lighthouse approves
 function pnhuk_readmore_link() {
 
-  echo '<a class="blog-post__readmore btn btn-danger mx-auto" href=" '.get_the_permalink().' " title="'. the_title_attribute([ 'echo'=>false ]).'">';
+  echo '<a class="blog-post__readmore btn btn-pnhorg mx-auto" href=" '.get_the_permalink().' " title="'. the_title_attribute([ 'echo'=>false ]).'">';
   printf(
     // interpolate string and escape html
     wp_kses(
@@ -146,7 +146,7 @@ function pnhuk_excerpt_more() {
 
     $more = sprintf(
       '<a class="cgr-awpt-read-more text-white" href="%1$s">
-        <button class="mt-4 btn btn-danger">
+        <button class="mt-4 btn btn-pnhorg">
           %2$s
        </button>
        </a>',
