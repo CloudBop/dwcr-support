@@ -1,5 +1,5 @@
 /* Nav item */
-// nav child menu hover - bootstrap4 - be wary of hover on touchscreen 
+// nav child menu hover - bootstrap4 - be wary of hover on touchscreen
 // .nav-item:hover .dropdown-menu:not(.show){
 // 	display: block;
 // }
@@ -9,7 +9,7 @@
 
 /* Nav */
 nav.navbar {
-  border-bottom: #ff6161 2px solid;
+  border-bottom: $pnhorg 2px solid;
   ul {
     margin-left: 18px;
     li {
@@ -32,15 +32,15 @@ nav.navbar {
   margin: 8px 0px;
 }
 
-// 
+//
 @include mq($from: large) {
   #donate-now-nav {
-    margin:0;
+    margin: 0;
     margin-left: 12px;
   }
 }
 
-.custom-logo-link{
+.custom-logo-link {
   padding: 5px 0;
   width: 100px;
 }
