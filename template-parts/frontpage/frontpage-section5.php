@@ -10,10 +10,13 @@
 <!-- End Social Section -->
 
 <section class="container">
+  <div class="row">
+  <div class="col-sm-6">
   <?php dynamic_sidebar('sidebar-front-page');
   ?>
-</section>
-<section class="container">
-  <?php dynamic_sidebar('sidebar-twitter');
-  ?>
+  </div> 
+  <div class="col-sm-6">
+  <?php dynamic_sidebar('sidebar-twitter');?>
+  </div> 
+  </div>
 </section>
