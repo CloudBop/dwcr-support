@@ -10,18 +10,13 @@
       </div>
 
       <div class="col-sm-6 card-order-image card-image-margin">
-        <img
-          <?php // src="<?php bloginfo('stylesheet_directory'); /assets/images/mbr-1-hands.jpeg">?>
-          src="<?php echo get_field('card_img_1')['url'];?>"
-          alt=""
-          class="img-fluid"
-        />
+        <?php echo wp_get_attachment_image(get_field('card_img_1'), 'full');?>
       </div>
     </div>
 
     <div class="row my-5 card-row">
       <div class="col-sm-6 align-self-center card-image-margin">
-        <img src="<?php echo get_field('card_img_2')['url'];?>" alt="" class="img-fluid" /> 
+        <?php echo wp_get_attachment_image(get_field('card_img_2'), 'full');?>
       </div>
 
       <div class="col-sm-6 align-self-center">
@@ -39,7 +34,7 @@
       </div>
 
       <div class="col-sm-6 align-self-center card-order-image card-image-margin">
-        <img src="<?php echo get_field('card_img_3')['url'];?>" alt="" class="img-fluid" />
+        <?php echo wp_get_attachment_image(get_field('card_img_3'), 'full');?>
       </div>
     </div>
   </div>
