@@ -88,13 +88,13 @@ body {
 .widget {
   // padding: 0.75rem 1.25rem;
   // margin: 0.75rem 1.25rem;
-  background-color: $card-bg;
+  // background-color: $card-bg;
   margin-bottom: 16px;
 }
 
 .widget_search {
   // margin: 16px 0;
-  background-color: $card-bg;
+  // background-color: $card-bg;
   border: $card-border-width solid $card-border-color;
   padding: 16px 4px;
 }
@@ -112,4 +112,10 @@ aside {
 
 .blog-post__readmore {
   text-align: center;
+}
+
+.widget_goodoldtwitterwidget {
+  h3 {
+    font-size: 1.1rem;
+  }
 }
