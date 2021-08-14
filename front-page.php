@@ -10,6 +10,7 @@ get_header(); ?>
     get_template_part('template-parts/frontpage/frontpage','section3');
     get_template_part('template-parts/frontpage/frontpage','section4');
     get_template_part('template-parts/frontpage/frontpage','section5');
+    get_template_part('template-parts/frontpage/frontpage','section6');
   ?>
 </div>
 <?php get_footer(); ?>
