@@ -2,7 +2,7 @@
 // render single-post, ie NOT page template 
 ?>
 
-<div class="container danger">
+<div class="container mt-3">
     <div class="row">
         <main class="col-sm-8 main-content">
             <?php get_template_part( 'wp-loop/loop', 'single' ); ?>
