@@ -9,7 +9,7 @@
         <?php while(have_posts()) { ?>
           <?php // https://developer.wordpress.org/reference/functions/the_post/ 
             the_post(); ?>
-            <div class="col-sm-8 p-0">
+            <div class="col-md-8">
               <main class="main-content">
                 <?php //get_template_part('template-parts/components/page/entry-header'); ?>
                 <?php get_template_part('template-parts/page/entry-content'); ?>
@@ -18,7 +18,7 @@
               </main>
             </div>
 
-            <aside class="col-sm-4 pr-0 page-sidebar">
+            <aside class="col-md-4 page-sidebar">
               <?php
                 
                 // DONE:TODO add this as widget - left in case error.
