@@ -2,7 +2,9 @@
   <?php while(have_posts()) { ?>
       <?php the_post(); ?>
 
-      <?php get_template_part('template-parts/post/content', get_post_format()); ?>
+      <?php  get_template_part('template-parts/post/content', get_post_format()); ?>
+      <?php // get_template_part('template-parts/post/header', get_post_format()); ?>
+      <?php // get_template_part('template-parts/page/entry-content', get_post_format()); ?>
       
       <?php 
     //   if (get_theme_mod('_themename_display_author_info', true)) {
