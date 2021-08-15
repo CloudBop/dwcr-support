@@ -62,19 +62,3 @@
 <?php wp_footer(); ?>
 </body>
 </html>
-
-
-<?php /* <footer class="site-footer">
-  footer stuff
-  <?php
-    if (is_active_sidebar('sidebar-2' ) ) {
-    ?>
-      <aside>
-        <?php dynamic_sidebar('sidebar-2') ?>
-      </aside>
-    <?php
-    }
-    ?>
-
-    <?php get_template_part( 'template-parts/footer/footer' ); ?>
-</footer>*/
