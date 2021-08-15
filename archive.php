@@ -29,14 +29,14 @@
 </header>
 <div class="container">
   <div class="row">
-    <section class="col-12 col-md-8">
+    <div class="col-md-8 p-sm-0 pr-md-2">
       <main id="main" class="site-main" role="main">
         <?php if(have_posts()) { ?>
             <?php 
               // each blog post
               while(have_posts()) { ?>
               <?php the_post(); ?>
-              <article <?php // echo post_class(); ?> >
+              <article <?php echo post_class('bg-white mb-3'); ?> >
                 <?php if(get_the_post_thumbnail() !== '') { ?>
                     <div class="img-fixed">
                       <?php 
@@ -44,10 +44,11 @@
                       the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>
                     </div>
                 <?php } ?>
-
-                <?php get_template_part('template-parts/post/header') ?>  
-                <?php the_excerpt(); ?>
-                <?php pnhuk_readmore_link(); ?>
+                <div class="p-1">
+                  <?php get_template_part('template-parts/post/header') ?>  
+                  <?php the_excerpt(); ?>
+                  <?php pnhuk_readmore_link(); ?>
+                </div>
               </article>
             <?php } ?>
 
@@ -55,20 +56,12 @@
               <?php get_template_part('template-parts/post/content','none'); ?>
           <?php } ?>
       </main>
-    </section>   
-    <aside class="col-12 col-md-4 aside-home">
+    </div>   
+    <aside class="col-md-4 p-md-0">
       <?php dynamic_sidebar('page-sidebar'); ?>
     </aside>
   </div>
 
 </div>
 
-<?php get_footer();
-
-// checkme 
-// <div class="side">
-// 			<?php if(is_active_sidebar('sidebar-1')) : ?<
-// 				<?php dynamic_sidebar('sidebar-1'); ?<
-// 			<?php endif; 
-// 		</div>
-?>
+<?php get_footer(); ?>
