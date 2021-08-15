@@ -1,9 +1,9 @@
 <section>
   <div class="container">
-    <header>
+    <header class="text-center entry-content p-3 my-3">
       <h2>Recent News</h2>
       </header>
-    <div class="contact-wrapper py-5 text-center">
+    <div class="contact-wrapper text-center">
       
 <?php
 
@@ -29,7 +29,9 @@ if ( $query->have_posts() ) {
       <!-- post thumbnail -->
       <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
           <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="h-entry__image-link flex-shrink-0 my-auto">
-              <?php the_post_thumbnail(array(220,220)); // Declare pixel size you need inside the array ?>
+            <div class="">
+              <?php the_post_thumbnail(array(100,100)); // Declare pixel size you need inside the array ?>
+            </div>    
           </a>
       <?php endif; ?>
       <!-- /post thumbnail -->
@@ -43,18 +45,17 @@ if ( $query->have_posts() ) {
         <!-- post details -->
         <time datetime="<?php the_time('Y-m-j'); ?>" class="dt-published"><?php the_time('jS F Y'); ?></time>
         <!-- /post details -->
-      </div>
-      
+      </div> 
     </header>
 
     <div class="">
 
 
       <?php // html5wp_summary('html5wp_index'); // Build your custom callback length in functions.php
-        the_excerpt();
+        // the_excerpt();
        ?>
 
-      <p><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="arrow-link">Read the full article</a></p>
+      <!-- <p><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="arrow-link">Read the full article</a></p> -->
 
       <?php edit_post_link(); ?>
     </div>

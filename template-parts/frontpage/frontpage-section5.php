@@ -11,12 +11,11 @@
 
 <section class="container">
   <div class="row">
-  <div class="col-sm-6">
-  <?php dynamic_sidebar('sidebar-front-page');
-  ?>
+    <div class="col-sm-6 entry-content">
+      <?php dynamic_sidebar('sidebar-front-page');?>
+    </div> 
+    <div class="col-sm-6 entry-content d-flex">
+      <?php  dynamic_sidebar('sidebar-twitter');?>
+    </div>
   </div> 
-  <div class="col-sm-6">
-  <?php dynamic_sidebar('sidebar-twitter');?>
-  </div> 
-  </div>
 </section>
