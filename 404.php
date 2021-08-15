@@ -1,14 +1,16 @@
 <?php get_header(); ?>
 <div class="container">
     <div class="row">
-        <main>
-            <div class="four-o-four">
-                <h1 class="display-1">404</h1>
-                <h2>Sorry, we can&rsquo;t find that</h2>
-                <p>Perhaps the page has changed or the the content is no longer relevent.<br>
-                Try returning to the <a href="/">homepage</a> to find what you are looking for.</p>
-            </div>
-        </main>
+        <div class="col">    
+            <main>
+                <div class="four-o-four">
+                    <h1 class="display-1">404</h1>
+                    <h2>Sorry, we can&rsquo;t find that</h2>
+                    <p>Perhaps the page has changed or the the content is no longer relevent.<br>
+                    Try returning to the <a href="/">homepage</a> to find what you are looking for.</p>
+                </div>
+            </main>
+        </div>
     </div>
 </div>
 <?php get_footer(); 
