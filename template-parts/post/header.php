@@ -7,7 +7,6 @@
             </a>
         </h2>
     <?php } ?>
-
     <div>
         <?php _themename_post_meta(); ?>
     </div>

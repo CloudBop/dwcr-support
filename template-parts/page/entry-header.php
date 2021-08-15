@@ -1,10 +1,3 @@
-<?php
-/**
- * 
- * 
- */
-?>
-
 <div style="height:200px">
   <header class="entry-header">
     <!-- background image -->

@@ -1,3 +1,7 @@
+<?php /**
+ * use for single.php
+ */
+?>
 <article <?php echo post_class('bg-white');?> >
 
     <?php if(get_the_post_thumbnail() !== '') { ?>
