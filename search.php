@@ -16,7 +16,7 @@
             <div class="img-fluid">
               <?php 
               // TODO - configure thumbnails for correct sizing
-              the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>
+              the_featured_img_srcset(); ?>
             </div>
             <?php } ?>
                     

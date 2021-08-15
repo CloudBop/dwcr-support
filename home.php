@@ -33,7 +33,8 @@
                       <div class="img-fluid">
                         <?php 
                         // TODO - configure thumbnails for correct sizing
-                        the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>
+                        the_featured_img_srcset();
+                        // the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>
                       </div>
                   <?php } ?>
                   <h2 class="px-2 mb-1">

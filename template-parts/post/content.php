@@ -5,11 +5,10 @@
 <article <?php echo post_class('bg-white');?> >
 
     <?php if(get_the_post_thumbnail() !== '') { ?>
-        <div class="">
             <?php 
+            the_featured_img_srcset();
             // TODO - configure thumbnails for correct sizing
-            the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>
-        </div>
+            // the_post_thumbnail( 'pnhuk-theme-blog-image' ); ?>       
     <?php } ?>
 
     <div class="p-1">
