@@ -19,7 +19,7 @@
 
   <div class="container pnhuk-main">
       <div class="row">
-        <div class="col-12 col-md-8">
+        <div class="col-md-8 p-sm-0 pr-md-2">
           <main id="main" role="main">
           <?php if(have_posts()) { ?>
             
@@ -57,10 +57,7 @@
           <?php } ?>
           </main>
         </div>
-      <!-- <div class="col-12 col-md-4" 
-      style="background-color: #c8d1c5; border:3px dotted olive;">
-      test</div> -->
-      <aside class="col-12 col-md-4">
+      <aside class="col-md-4 p-md-0">
         <?php dynamic_sidebar('news-posts-sidebar'); ?>
       </aside>
     </div>
