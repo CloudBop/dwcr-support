@@ -21,8 +21,8 @@ get_header();
           <div class="col-12">
             <main class="main-content">
               <article class="entry-content" <?php post_class(); ?>>
-                  <?php the_content()  // EventsList Custom Plugin mkup ?>
-                </article> 
+                <?php the_content()  // EventsList Custom Plugin mkup ?>
+              </article> 
             </main>
           </div>
         <?php 
