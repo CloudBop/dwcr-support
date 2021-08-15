@@ -1,6 +1,6 @@
 <?php
 /**
- * main template
+ * main template - identical to basic page.
  * 
  * end of template heirarchy
  * https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -9,22 +9,58 @@
  * @package pnhuk-dwcr
  */
 ?>
+<?php get_header(); ?>
+  <?php get_template_part('template-parts/page/entry-header'); ?>
+  
+  <div class="container">
+    <div class="row">
+      <?php if(have_posts()) { ?>
+        <?php while(have_posts()) { ?>
+          <?php // https://developer.wordpress.org/reference/functions/the_post/ 
+            the_post(); ?>
+            <div class="col-md-8 p-sm-0 pr-md-2">
+              <main class="main-content">
+                <article class="entry-content col" <?php post_class(); ?>>
 
-<?php get_header();?>
+                    <?php
+                      //    the_post_custom_thumbnail(
+                      //        get_the_ID(),
+                      //        $size = "featured-thumbnail",
+                      //        [
+                      //        'sizes' => '(max-width: 350px) 350px, 233px',
+                      //        'class' => 'attachment-featured-thumbnail size-featured-image'
+                      //        ]
+                      //    )
+                    ?>
 
-<div id="primary">
-  <main id="main" class="site-main mt-5" role="main">
-    <h1>index</h1>
-  </main>
-</div>
+                    <?php the_content()  // Gutenberg block content ?>
+                  </article> 
+              </main>
+            </div>
 
-<?php 
-get_footer();
+            <aside class="col-md-4 p-0">
+              <?php dynamic_sidebar('page-sidebar'); ?>                        
+            </aside>
+          
+          <?php // if (comments_open() || get_comments_number() ) {
+          //     comments_template();
+          // } ?>
+      <?php } // end while?>
+
+    <?php } else {?>
+        <div class="col">
+          <?php get_template_part('template-parts/post/content','none'); ?>
+        </div>
+    <?php }  // end if else ?>
+    </div>
+  </div>
+<?php get_footer(); ?> 
 
 
-/*
 
- <?php if ( have_posts() ) : ?>
+
+
+ <?php /* if ( have_posts() ) : ?>
       <div class="container">
 
         <?php if( is_home() && ! is_front_page() ) { ?>
