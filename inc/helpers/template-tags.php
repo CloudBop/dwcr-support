@@ -248,15 +248,8 @@ function pnhuk_breadcrumb(){
 						echo $output;
 	
 					  endif;
-				?> 
-					
-				</div>
-
-<?php } ?>
-
-
-<?php 
-
+				?></div>
+			<?php }
 function the_featured_img_srcset(){
   $img_id = get_post_thumbnail_id();
   $size = 'large';
@@ -288,9 +281,8 @@ the_post_thumbnail('large');           // Large resolution (default 1024px x 102
 the_post_thumbnail('full');            // Original image resolution (unmodified)
 Handy tip: WordPress also generates a 'medium_large' thumbnail even though it is not explicitly shown in the visual interface. By default it is tablet size(768px wide) and I've actually found it super handy in many cases. For more in depth info, I suggest reading up on the codex. 
 https://codex.wordpress.org/Post_Thumbnails#Thumbnail_Sizes
-*/?>
+*/
 
-<?php 
 // change markup here
 function pnhorg_the_post_navigation( $args = array() ) {    
     $args = wp_parse_args( $args, array(
