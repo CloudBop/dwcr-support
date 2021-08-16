@@ -46,7 +46,7 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
                   // removed active from nav-item on ln below.
                   ?>
                     <li class="nav-item ">
-                        <a class="nav-link  <?php echo ("donate now" == strtolower(trim($is_donate))) ? 'btn btn-pnhorg text-white'  : '' ?>" href="<?php echo esc_url($menu_item->url); ?>">
+                        <a class="nav-link  <?php echo ("donate now" == strtolower(trim($is_donate))) ? 'btn btn-pnhorg text-white mx-2'  : '' ?>" href="<?php echo esc_url($menu_item->url); ?>">
                         <?php echo esc_html( $menu_item->title ); ?>
                         <span class="sr-only">(current)</span>
                       </a>
