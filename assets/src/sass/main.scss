@@ -21,6 +21,7 @@
 @import "4-layouts/frontpage/section8";
 
 @import "4-layouts/widgets/toc-widget";
+@import "4-layouts/widgets/footer-twitter-widget";
 
 @import "4-layouts/posts/post-list";
 
@@ -31,7 +32,7 @@ body {
 // $primary_theme: rebeccapurple;
 /* Buttons */
 .pnh-red-button {
-  background: crimson;
+  background: $pnhorg;
   color: #fff;
 }
 
@@ -114,8 +115,20 @@ aside {
   text-align: center;
 }
 
-.widget_goodoldtwitterwidget {
-  h3 {
-    font-size: 1.1rem;
+.tribe-events-widget-events-list__header > h2 {
+  color: red;
+}
+
+.tribe-events-widget-events-list__header
+  > .tribe-events-widget-events-list__header-title.tribe-common-h6.tribe-common-h--alt {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.post-navigation {
+  padding: 1rem 0;
+  .nav-next {
+    text-align: right;
   }
 }
