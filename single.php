@@ -12,7 +12,7 @@
 
                     <?php  get_template_part('template-parts/post/content', get_post_format()); ?>
                     
-                    <?php 
+                    <?php
                     //   if (get_theme_mod('_themename_display_author_info', true)) {
                     //     //   get_template_part('template-parts/single/author');
                     //   } 
@@ -32,7 +32,7 @@
                 <?php } ?>
                 </main>
         </div>
-        <aside class="col-sm-4 p-md-0">
+        <aside class="col-md-4 p-sm-0">
             <?php dynamic_sidebar('news-posts-sidebar'); ?>
         </aside>
     </div>

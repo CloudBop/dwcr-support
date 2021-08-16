@@ -8,7 +8,7 @@
             the_post(); ?>
             <div class="col-md-8 p-sm-0 pr-md-2">
               <main class="main-content">
-                <article class="entry-content col" <?php post_class(); ?>>
+                <article class="entry-content mb-3 p-2" <?php post_class(); ?>>
 
                     <?php // TODO
                       //    the_post_custom_thumbnail(
@@ -25,7 +25,7 @@
               </main>
             </div>
 
-            <aside class="col-md-4 p-0">
+            <aside class="col-md-4 p-sm-0">
               <?php dynamic_sidebar('page-sidebar'); ?>                        
             </aside>
           
