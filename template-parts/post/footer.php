@@ -1,6 +1,5 @@
 <footer>
-<hr>
-<hr>
+<?php echo pnhorg_the_post_navigation(); ?>
     <?php
     if(has_category()) {
         echo '<div class="c-post__cats">';

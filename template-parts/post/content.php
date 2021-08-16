@@ -2,7 +2,7 @@
  * use for single.php
  */
 ?>
-<article <?php echo post_class('bg-white');?> >
+<article <?php echo post_class('bg-white mb-3');?> >
 
     <?php if(get_the_post_thumbnail() !== '') { ?>
             <?php 
@@ -29,11 +29,6 @@
         <?php } ?>
 
         <?php  if(!is_single()) { pnhuk_readmore_link(); } ?>
-
-        <?php
-            echo ":  ".is_page();
-            echo ":   ".is_single();
-        ?>
 
     </div>
 
