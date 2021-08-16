@@ -1,0 +1,38 @@
+.site-footer {
+  .widget_goodoldtwitterwidget > h3 {
+  }
+
+  ul.good_old_twitter_widget {
+    font-size: 0.9rem;
+
+    a {
+      font-size: 0.7rem;
+    }
+    li:first-child {
+      // border-bottom: 1px solid snow;
+    }
+    .li {
+      margin: 4px 0;
+      display: inline-flex;
+    }
+    span {
+      display: inline-block;
+    }
+    span:last-child:before {
+      content: "tweeted on";
+      margin-right: 4px;
+      margin-bottom: 0.8rem;
+    }
+    span:last-child {
+      display: block;
+      margin-top: 0.4rem;
+      margin-bottom: 1.25rem;
+      // color: royalblue;
+    }
+  }
+
+  .gotw_link_user {
+    padding: 0.5rem;
+    text-align: center;
+  }
+}
