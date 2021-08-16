@@ -11,7 +11,7 @@ get_header();
           <?php // https://developer.wordpress.org/reference/functions/the_post/ 
             the_post(); ?>
 
-            <aside class="col-md-4 p-0">
+            <aside class="col-md-4 p-sm-0">
               <?php
                 dynamic_sidebar('contents-sidebar');
                 // echo do_shortcode("[toc]"); - there's another plugin utilising similar implementation
@@ -20,7 +20,7 @@ get_header();
 
             <div class="col-md-8 p-sm-0 pl-md-2">
               <main class="main-content">
-                <article class="entry-content col" <?php post_class(); ?>>
+                <article class="entry-content p-2" <?php post_class(); ?>>
 
                     <?php // TODO
                       //    the_post_custom_thumbnail(
