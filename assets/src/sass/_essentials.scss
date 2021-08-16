@@ -1,14 +1,13 @@
 // https://getbootstrap.com/docs/4.6/getting-started/theming/
 
 // Toggle global options
-$enable-gradients: true;
+// $enable-gradients: true;
 $enable-shadows: true;
 @import "custom-bs-overrrides"; // override bootstrap defaults
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
-
 
 @import "bootstrap/scss/root"; // Required
 @import "bootstrap/scss/reboot"; // Required
@@ -45,9 +44,8 @@ $enable-shadows: true;
 @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
 
-
 // Essentials.
 @import "../library/fonts/fonts.css";
 @import "0-settings/settings";
 @import "1-tools/tools";
-@import '~sass-mq';
+@import "~sass-mq";
