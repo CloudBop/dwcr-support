@@ -8,16 +8,9 @@
 ?>
 
 <!-- Start Footer -->
-<footer class="site-footer pb-5">
-  <div class="container text-center">
-    <div class="row py-5">
-      <!-- <div class="col-md-4 mb-3 mb-md-0">
-        <h3 class="mb-2">Spare Widget</h3>
-        <a href="#" class="d-block footer-link">Help Center</a>
-        <a href="#" class="d-block footer-link">PNH Forums</a>
-        <a href="#" class="d-block footer-link">PNH Contact</a>
-        <a href="#" class="d-block footer-link">Our site</a>
-      </div> -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row py-1">
 
       <div class="col-md-8 mb-3 mb-md-0">
         <?php
@@ -48,12 +41,11 @@
         ?>
       </div>
 
-      <div class="col-md-4 mb-3 mb-md-0">
-        
-      </div>
+      
     </div>
+  </div>
+  <div class="text-center bg-dark p-2">
     <h4>PNH SUPPORT</h4>
-    <p class="m-0">Copyright &copy; <span id="year"></span></p>
   </div>
 </footer>
 
@@ -62,3 +54,4 @@
 <?php wp_footer(); ?>
 </body>
 </html>
+<?php // <p class="m-0">Copyright &copy; <span id="year"></span></p>?>
