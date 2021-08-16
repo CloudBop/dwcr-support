@@ -66,7 +66,7 @@ class Sidebars {
       'name'          => esc_html__( 'TOC+ Sidebar', 'pnhuk-theme'),
       'id'            => 'contents-sidebar',
       'description'   => __( 'Contents Sidebar', 'pnhuk-theme'),
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'before_widget' => '<div id="%1$s" class="widget %2$s bg-white widget-table-of-contents p-2">',
       'after_widget'  => '</div>',
       'before_title'  => '<header class="widget-title">',
       'after_title'   => '</header>',
