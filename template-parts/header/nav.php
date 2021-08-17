@@ -11,6 +11,8 @@ $menu_class = \PNHUK_THEME\Inc\Menus::get_instance();
 $header_menu_id = $menu_class->get_menu_id( 'pnhuk-theme-header-menu' );
 // get the header menu as [] each item is object(WP_Post)
 $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
+// increment for aria ID
+$i =0;
 ?>
 <nav class="navbar navbar-expand-lg bg-white navbar-light">
 <!-- class="navbar navbar-expand-lg bg-white navbar-light " -->
@@ -46,19 +48,20 @@ $header_menus = wp_get_nav_menu_items($menu = $header_menu_id, $args=[]);
                   // removed active from nav-item on ln below.
                   ?>
                     <li class="nav-item ">
-                        <a class="nav-link  <?php echo ("donate now" == strtolower(trim($is_donate))) ? 'btn btn-pnhorg mx-2'  : '' ?>" href="<?php echo esc_url($menu_item->url); ?>">
+                        <a class="nav-link  <?php echo ("donate now" == strtolower(trim($is_donate))) ? 'btn btn-pnhorg mx-2 text-dark'  : '' ?>" href="<?php echo esc_url($menu_item->url); ?>">
                         <?php echo esc_html( $menu_item->title ); ?>
                         <span class="sr-only">(current)</span>
                       </a>
                     </li>
                   <?php
                 } else {
+                  $aria_label_increment = $i++;
                   ?>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="<?php echo esc_url( $menu_item->url ); ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle" href="<?php echo esc_url( $menu_item->url ); ?>" id="navbarDropdown-<?php echo $aria_label_increment; ?>" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <?php echo esc_html( $menu_item->title ); ?>
                       </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown-<?php echo $aria_label_increment; ?>">
                         <?php foreach ($child_menu_items as $child_menu_item) { ?>
                           <a class="dropdown-item" href="<?php echo esc_url( $child_menu_item->url) ?>">
                             <?php echo esc_html( $child_menu_item->title) ?>
