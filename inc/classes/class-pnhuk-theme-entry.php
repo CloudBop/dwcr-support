@@ -45,7 +45,7 @@ class PNHUK_THEME_ENTRY {
   public function setup_theme() {
     // todo load-theme-text-domain - internationalisation
     // let WordPress manage title
-    add_theme_support( 'title_tag' );
+    add_theme_support( 'title-tag' );
     
     add_theme_support( 'custom-logo', $defaults = array(
       // classnames 
