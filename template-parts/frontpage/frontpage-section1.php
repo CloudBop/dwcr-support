@@ -26,7 +26,7 @@ $section1_image	= get_field('section_1_image');
       <!-- main content -->
       <div class="hero-inner container d-flex">
         <div class="row align-self-center">
-          <div class="col-md-6 offset-md-4">
+          <div class="col-md-6 offset-md-3">
             <h1>
               <?php the_field('section_1_title'); ?>
             </h1>
